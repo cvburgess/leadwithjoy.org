@@ -8,6 +8,7 @@
     "url": "https://cvburgess.com/"
   },
   "links": {
+    "cvburgess": "https://cvburgess.com/",
     "podcast": {
       "apple": "https://podcasts.apple.com/us/podcast/lead-with-joy/id1729112497",
       "captivate": "https://lead-with-joy.captivate.fm/listen",
@@ -16,5 +17,5 @@
     },
     "youtube": "https://youtube.com/@cvburgess"
   },
-  "repoUrl": "https://github.com/cvburgess/lead-with-joy"
+  "repoUrl": "https://github.com/cvburgess/leadwithjoy.org"
 }
