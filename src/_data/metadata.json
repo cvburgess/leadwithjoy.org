@@ -1,0 +1,20 @@
+{
+  "title": "Lead with Joy",
+  "url": "https://leadwithjoy.org/",
+  "description": "Tools and insights to help engineering leaders change how we work, together.",
+  "author": {
+    "name": "Charles Burgess",
+    "email": "hello@cvburgess.com",
+    "url": "https://cvburgess.com/"
+  },
+  "links": {
+    "podcast": {
+      "apple": "https://podcasts.apple.com/us/podcast/lead-with-joy/id1729112497",
+      "captivate": "https://lead-with-joy.captivate.fm/listen",
+      "rss": "https://feeds.captivate.fm/lead-with-joy/",
+      "spotify": "https://open.spotify.com/show/2CpRcrHepkqSe0TswfguZT"
+    },
+    "youtube": "https://youtube.com/@cvburgess"
+  },
+  "repoUrl": "https://github.com/cvburgess/lead-with-joy"
+}

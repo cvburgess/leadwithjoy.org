@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="How to find the most effective format for the challenges your team is facing today">
+<meta property="og:title" content="The Standup Playbook">
+<meta property="og:description" content="How to find the most effective format for the challenges your team is facing today">
+<meta property="og:image" content="https://cvburgess.com/img/og/og-playbook.jpg">
+<meta property="og:image:type" content="image/jpg">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="1024">
+
+<title>
+  The Standup Playbook • Charles Burgess</title>
+
+<link rel="stylesheet" href="/css/index.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,400;1,500;1,600;1,700;1,900&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500;1,600;1,700;1,900&amp;display=swap">
+
+<link rel="icon" href="/img/favicon/favicon.ico">
+<link rel="icon" href="/img/favicon/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/img/favicon/favicon-180.png">
+<link rel="manifest" href="/img/favicon/manifest.webmanifest"></head>
+  <body onload="addInteractivity();"><header class="hidden-print-only">
+  <div class="nav center-responsive">
+    <div class="center push-left full-width-mobile-only">
+      <a class="nav-name push-left" href="/">CHARLES BURGESS</a>
+      <img src="/img/icons/menu.svg" class="mobile-only nav-icon" alt="menu icon" onclick="toggleMenu()" height="16px" width="16px">
+    </div>
+    <hr class="mobile-only hidden">
+    <a class="nav-link padding-medium hidden-mobile-only" href="/lead-with-joy">LEAD WITH JOY</a>
+    <a class="nav-link padding-medium hidden-mobile-only" href="/contact">CONTACT</a>
+
+    <a class="nav-link padding-medium hidden-mobile-only" href="/search">
+      <img class="nav-icon" height="18" src="/img/icons/search.svg">
+    </a>
+  </div>
+</header>
+
+<script>
+  function toggleMenu() {
+    const header = document.getElementsByTagName("header")[0];
+    const divider = document.getElementsByTagName("hr")[0];
+    const navLinks = document.getElementsByClassName("nav-link");
+
+    divider
+      .classList
+      .toggle("hidden");
+
+    for (link of navLinks) {
+      link
+        .classList
+        .toggle("hidden-mobile-only");
+    }
+  }
+</script>
+
+<script>
+  function addInteractivity() {
+    const clickables = document.getElementsByClassName("clickable");
+    for (clickable of clickables) {
+      const url = clickable.getAttribute("data-href");
+      const isExternal = url.startsWith("http");
+      if (url) {
+        clickable.addEventListener("click", () => window.open(
+          url, isExternal
+          ? "_blank"
+          : "_self"));
+      }
+    }
+  }
+</script><main>
+      <link rel="stylesheet" href="/css/post.css">
+
+<div>
+  <h1 class="title">The Standup Playbook</h1>
+  <div class="center no-wrap">
+    <span class="line outer-line"></span>
+    <img class="line post-icon no-shadow" src="/img/icons/playbook.svg" aria-hidden="true" alt="playbook icon">
+    <span class="line outer-line"></span>
+  </div>
+</div>
+
+<div class="post">
+
+  
+
+  
+
+  
+    <nav class="post-nav">
+      <ol>
+        
+          <li>
+            <a href="#introduction">Introduction</a>
+            
+          </li>
+        
+          <li>
+            <a href="#when-you-just-want-a-status-update">When you just want a status update</a>
+            
+          </li>
+        
+          <li>
+            <a href="#when-a-project%2Fsprint-is-getting-started">When a project/sprint is getting started</a>
+            
+          </li>
+        
+          <li>
+            <a href="#when-a-deadline-is-near">When a deadline is near</a>
+            
+          </li>
+        
+          <li>
+            <a href="#when-things-are-going-smoothly">When things are going smoothly</a>
+            
+          </li>
+        
+          <li>
+            <a href="#when-things-are-behind">When things are behind</a>
+            
+          </li>
+        
+          <li>
+            <a href="#when-there-is-chaos-outside-of-the-team's-control">When there is chaos outside of the team's control</a>
+            
+          </li>
+        
+          <li>
+            <a href="#when-the-team's-priorities-aren't-clear">When the team's priorities aren't clear</a>
+            
+          </li>
+        
+          <li>
+            <a href="#when-the-team-need-to-collaborate">When the team need to collaborate</a>
+            
+          </li>
+        
+          <li>
+            <a href="#when-folks-aren't-focused-on-the-right-things">When folks aren't focused on the right things</a>
+            
+          </li>
+        
+          <li>
+            <a href="#when-you-identify-bottlenecks-to-delivery">When you identify bottlenecks to delivery</a>
+            
+              <ul>
+                
+                  <li>
+                    <a href="#ready-to-deploy-(or-some-flavor-of-%22get-it-out-the-door%22)">Ready to Deploy (or some flavor of "get it out the door")</a>
+                  </li>
+                
+                  <li>
+                    <a href="#ready-for-qa-(or-some-flavor-of-testing)">Ready for QA (or some flavor of testing)</a>
+                  </li>
+                
+                  <li>
+                    <a href="#in-code-review">In Code Review</a>
+                  </li>
+                
+                  <li>
+                    <a href="#in-progress-(or-some-flavor-of-%22working-on-it!%22)">In Progress (or some flavor of "working on it!")</a>
+                  </li>
+                
+                  <li>
+                    <a href="#todo">TODO</a>
+                  </li>
+                
+              </ul>
+            
+          </li>
+        
+          <li>
+            <a href="#when-the-team-could-(or-could-not)-use-some-face-time">When the team could (or could not) use some face time</a>
+            
+          </li>
+        
+          <li>
+            <a href="#when-the-meeting-could-use-a-little-more...-fun">When the meeting could use a little more... fun</a>
+            
+          </li>
+        
+      </ol>
+    </nav>
+  
+
+  <div class="post-content">
+    <h2 id="introduction" tabindex="-1"><a class="header-anchor" href="#introduction"></a><a href="#introduction" class="header-anchor">Introduction</a></h2>
+<p>Standup is the most useful meetings on your calendar when done well... or a
+dreaded time suck you multitask through. Here's how to adapt your standup for
+the challenges your team is facing, today.</p>
+<div class="callout"><p class="callout-title">HEADS UP!</p><p>This playbook assumes you already know the basics of running a standup, but you
+can always check out <a href="/">The Standup Guide</a> for more in-depth information about
+the building blocks and philosophy of an awesome standup.</p>
+</div>
+<h2 id="when-you-just-want-a-status-update" tabindex="-1"><a class="header-anchor" href="#when-you-just-want-a-status-update"></a><a href="#when-you-just-want-a-status-update" class="header-anchor">When you just want a status update</a></h2>
+<ul>
+<li>Don't have a standup.
+<ul>
+<li>Standup is <strong>NOT</strong> the time to deliver status updates</li>
+<li>Not for you, not for your boss, not for a project manager... you get the
+point</li>
+<li>Hopefully you have tools that can tell you the status of the project</li>
+</ul>
+</li>
+</ul>
+<h2 id="when-a-project%2Fsprint-is-getting-started" tabindex="-1"><a class="header-anchor" href="#when-a-project%2Fsprint-is-getting-started"></a><a href="#when-a-project%2Fsprint-is-getting-started" class="header-anchor">When a project/sprint is getting started</a></h2>
+<p>This</p>
+<h2 id="when-a-deadline-is-near" tabindex="-1"><a class="header-anchor" href="#when-a-deadline-is-near"></a><a href="#when-a-deadline-is-near" class="header-anchor">When a deadline is near</a></h2>
+<h2 id="when-things-are-going-smoothly" tabindex="-1"><a class="header-anchor" href="#when-things-are-going-smoothly"></a><a href="#when-things-are-going-smoothly" class="header-anchor">When things are going smoothly</a></h2>
+<h2 id="when-things-are-behind" tabindex="-1"><a class="header-anchor" href="#when-things-are-behind"></a><a href="#when-things-are-behind" class="header-anchor">When things are behind</a></h2>
+<h2 id="when-there-is-chaos-outside-of-the-team's-control" tabindex="-1"><a class="header-anchor" href="#when-there-is-chaos-outside-of-the-team's-control"></a><a href="#when-there-is-chaos-outside-of-the-team's-control" class="header-anchor">When there is chaos outside of the team's control</a></h2>
+<h2 id="when-the-team's-priorities-aren't-clear" tabindex="-1"><a class="header-anchor" href="#when-the-team's-priorities-aren't-clear"></a><a href="#when-the-team's-priorities-aren't-clear" class="header-anchor">When the team's priorities aren't clear</a></h2>
+<h2 id="when-the-team-need-to-collaborate" tabindex="-1"><a class="header-anchor" href="#when-the-team-need-to-collaborate"></a><a href="#when-the-team-need-to-collaborate" class="header-anchor">When the team need to collaborate</a></h2>
+<h2 id="when-folks-aren't-focused-on-the-right-things" tabindex="-1"><a class="header-anchor" href="#when-folks-aren't-focused-on-the-right-things"></a><a href="#when-folks-aren't-focused-on-the-right-things" class="header-anchor">When folks aren't focused on the right things</a></h2>
+<h2 id="when-you-identify-bottlenecks-to-delivery" tabindex="-1"><a class="header-anchor" href="#when-you-identify-bottlenecks-to-delivery"></a><a href="#when-you-identify-bottlenecks-to-delivery" class="header-anchor">When you identify bottlenecks to delivery</a></h2>
+<p>Scan the board, is there a particular status that things are getting stuck in?
+If so, use the generalized statuses below to get unstuck.</p>
+<h3 id="ready-to-deploy-(or-some-flavor-of-%22get-it-out-the-door%22)" tabindex="-1"><a class="header-anchor" href="#ready-to-deploy-(or-some-flavor-of-%22get-it-out-the-door%22)"></a><a href="#ready-to-deploy-(or-some-flavor-of-%22get-it-out-the-door%22)" class="header-anchor">Ready to Deploy (or some flavor of "get it out the door")</a></h3>
+<ul>
+<li>This is a great time to ask the team to pause new work for a few hours and get
+the accumulated work out the door</li>
+<li>Long term, you may invest in a <a href="/">release train</a> or continuous deployment to
+remove this completely</li>
+</ul>
+<h3 id="ready-for-qa-(or-some-flavor-of-testing)" tabindex="-1"><a class="header-anchor" href="#ready-for-qa-(or-some-flavor-of-testing)"></a><a href="#ready-for-qa-(or-some-flavor-of-testing)" class="header-anchor">Ready for QA (or some flavor of testing)</a></h3>
+<ul>
+<li>Ask the QA(s) if there is anything preventing them from testing</li>
+<li>Ask the team to rally behind QA and spend the next few hours prioritizing the
+things that would speed them up or unblock them</li>
+<li>If there are large dependencies holding things up, see if there is a way to
+brainstorm with the team to find a path forward with the pieces you have right
+now</li>
+</ul>
+<h3 id="in-code-review" tabindex="-1"><a class="header-anchor" href="#in-code-review"></a><a href="#in-code-review" class="header-anchor">In Code Review</a></h3>
+<ul>
+<li>Ask the team to prioritize code review before writing any new code for the
+next few hours</li>
+<li>Have people share links to their open PRs as they give their updates</li>
+<li>Consider working with the team to establish a routine time for for code review
+if this frequently occurs</li>
+</ul>
+<h3 id="in-progress-(or-some-flavor-of-%22working-on-it!%22)" tabindex="-1"><a class="header-anchor" href="#in-progress-(or-some-flavor-of-%22working-on-it!%22)"></a><a href="#in-progress-(or-some-flavor-of-%22working-on-it!%22)" class="header-anchor">In Progress (or some flavor of "working on it!")</a></h3>
+<ul>
+<li>Ensure priorities are crystal clear to the team, they may be juggling too many
+things because they are not aligned on which of those things matter the most</li>
+<li>Ask teams to "put down" any tickets they have not <em>actually started</em> or work
+they may have hit "pause" on by moving them back to a TODO-style status
+<ul>
+<li>Many tools will use time in progress to calculate metrics like cycle time
+(how long it took you to do a given task), so ensuring things are <em>only</em> in
+progress when they are <em>actively</em> being worked on can be very important</li>
+</ul>
+</li>
+<li>If any one person has a lion's share of the work, see if the team can actively
+"load balance" by using standup to take tickets off that person's plate and
+re-assigning them to someone less busy</li>
+</ul>
+<h3 id="todo" tabindex="-1"><a class="header-anchor" href="#todo"></a><a href="#todo" class="header-anchor">TODO</a></h3>
+<ul>
+<li>This may be normal, all work often starts in a TODO state</li>
+<li>As the project or sprint go on, if work is not leaving this status you may
+want to focus on velocity/throughput/burndown with the team to make sure
+everyone can gauge the status of the project
+<ul>
+<li>Giving smart people the tools they need to adjust their own trajectory is a
+key reason standup exists in the first place</li>
+<li>Ask the team what can be done to get "back on track"</li>
+</ul>
+</li>
+</ul>
+<h2 id="when-the-team-could-(or-could-not)-use-some-face-time" tabindex="-1"><a class="header-anchor" href="#when-the-team-could-(or-could-not)-use-some-face-time"></a><a href="#when-the-team-could-(or-could-not)-use-some-face-time" class="header-anchor">When the team could (or could not) use some face time</a></h2>
+<ul>
+<li>Is your team in-person, hybrid, or in a "cameras on" company?
+<ul>
+<li>The team may be <em>relieved</em> to have a meeting where they don't have to be
+"on"</li>
+<li>What time is your standup?
+<ul>
+<li>If your standup is <em>in the morning</em>, teams may appreciate an
+<strong>audio-only</strong> format where the only thing that matters is connecting and
+getting down to business</li>
+<li>Seeing one another is nice, but seeing yourself in a square can also be a
+distraction for many</li>
+<li>Some might feel pressured to prep their appearance instead of their notes
+or be hesitant to grab a cup of coffee or pace the room - both of which
+often help people absorb information</li>
+<li>Standup should be about moving the project and team forward, not being
+self-conscious</li>
+</ul>
+</li>
+<li>Do you have nero-divergent people or anyone that may be prone to stagefright
+on the call?
+<ul>
+<li>Having "all eyes on you" may be distracting or intimidating for some</li>
+<li>For many nero-divergent people, maintaining eye contact can be difficult
+and exhausting</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Is your team fully-remote?
+<ul>
+<li>If your team doesn't get time to have "water cooler" conversations and
+connect, you may want to ask your team if they'd be excited to "see" each
+other in a cameras-on format once (or more) a week</li>
+<li>Making it an optional treat the team can look forward to vs a mandatory
+obligation allows the fun to flow in a way that dictatorial regimes could
+never</li>
+</ul>
+</li>
+</ul>
+<h2 id="when-the-meeting-could-use-a-little-more...-fun" tabindex="-1"><a class="header-anchor" href="#when-the-meeting-could-use-a-little-more...-fun"></a><a href="#when-the-meeting-could-use-a-little-more...-fun" class="header-anchor">When the meeting could use a little more... fun</a></h2>
+<ul>
+<li>Give shoutouts for birthdays, work anniversaries, and wins</li>
+<li>Pick a question to answer alongside each person's update
+<ul>
+<li>This could be an "ice breaker", a silly would-you-rather, trivia, etc</li>
+<li>I find the more absurd the better: <em>"Would you rather have watermelons for
+hands or broccoli for legs?"</em></li>
+</ul>
+</li>
+<li>Start a water-cooler conversation before the call "starts"
+<ul>
+<li>Pop culture, hobbies, and personal connections are all great</li>
+<li>Avoid the usual awkward turtles: politics, sex, drugs, controversy, etc</li>
+</ul>
+</li>
+<li>Play a shared team Spotify playlist at the start and/or end of the call</li>
+</ul>
+
+  </div>
+
+</div>
+
+
+
+
+
+  <h1 class="title">Dive a little deeper</h1>
+  <p class="subtitle">Related posts, videos, and podcast episodes</p>
+
+  <div class="cards stack"><div class="card round shadow clickable" data-href="/posts/guide-standup/"><div class="card-container"><div class="center"><a href="/posts/guide-standup/"><img src="/img/icons/guide.svg" alt="guide" class="no-shadow"></a></div><div class="card-details"><a href="/posts/guide-standup/" class="margin-none card-title max-lines-2">The Standup Guide</a><p class="margin-none max-lines-3">Done correctly, standups can both move your project forward and be a daily opportunity for your team to connect and celebrate</p></div></div></div></div>
+
+
+<div class="center margin-xlarge-vertical hidden-print-only">
+  <a class="margin-medium font-size-subheading" href="/lead-with-joy">← Back to the Hub</a>
+  <span class="margin-medium hidden-mobile-only font-size-subheading"> • </span>
+  <a class="margin-medium font-size-subheading" href="https://github.com/cvburgess/lead-with-joy/blob/main/src/posts/playbook-standup.md" target="_blank">Suggest an Edit on GitHub</a>
+</div>
+
+<div class="print-only center margin-medium">
+  <p>Charles Burgess © 2023</p>
+</div>
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        const id = entry
+          .target
+          .getAttribute('id');
+        if (entry.intersectionRatio > 0) {
+          document
+            .querySelector(`nav li a[href="#${id}"]`)
+            .classList
+            .add('active');
+        } else {
+          document
+            .querySelector(`nav li a[href="#${id}"]`)
+            .classList
+            .remove('active');
+        }
+      });
+    });
+
+    // Track all sections that have an `id` applied
+    document
+      .querySelectorAll('h1[id], h2[id], h3[id], h4[id]')
+      .forEach((heading) => {
+        observer.observe(heading);
+      });
+
+  });
+</script>
+    </main><footer class="hidden-print-only">
+  <div class="footer-main-container">
+    <div>
+      <h2>Go</h2>
+
+      <a href="/">
+        <p>Home</p>
+      </a>
+
+      <a href="/lead-with-joy">
+        <p>Lead with Joy</p>
+      </a>
+
+      <a href="/contact">
+        <p>Contact</p>
+      </a>
+    </div>
+    <div>
+      <h2>Listen</h2>
+
+      <a href="https://open.spotify.com/show/2CpRcrHepkqSe0TswfguZT" target="_blank">
+        <p>Spotify</p>
+      </a>
+
+      <a href="https://podcasts.apple.com/us/podcast/lead-with-joy/id1729112497" target="_blank">
+        <p>Apple Podcasts</p>
+      </a>
+
+      <a href="https://feeds.captivate.fm/lead-with-joy/" target="_blank">
+        <p>Web &nbsp;( RSS Feed )</p>
+      </a>
+    </div>
+    <div>
+      <h2>Connect</h2>
+
+      <a href="" rel="noopener noreferrer" target="_blank">
+        <p>GitHub</p>
+      </a>
+
+      <a href="https://youtube.com/@cvburgess" rel="noopener noreferrer" target="_blank">
+        <p>YouTube</p>
+      </a>
+
+      <a href="" rel="noopener noreferrer" target="_blank">
+        <p>Patreon</p>
+      </a>
+    </div>
+  </div>
+
+  <div class="center no-wrap margin-medium-vertical">
+    <span class="line outer-line"></span>
+    <p class="line copyright">Charles Burgess © 2023</p>
+    <span class="line outer-line"></span>
+  </div>
+</footer>
+</body></html>

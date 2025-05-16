@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Tools and insights to help engineering leaders change how we work, together.">
+<meta property="og:title" content="Playbooks">
+<meta property="og:description" content="Tools and insights to help engineering leaders change how we work, together.">
+<meta property="og:image" content="https://cvburgess.com/img/og/og-default.jpg">
+<meta property="og:image:type" content="image/jpg">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="1024">
+
+<title>
+  Playbooks • Charles Burgess</title>
+
+<link rel="stylesheet" href="/css/index.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,400;1,500;1,600;1,700;1,900&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500;1,600;1,700;1,900&amp;display=swap">
+
+<link rel="icon" href="/img/favicon/favicon.ico">
+<link rel="icon" href="/img/favicon/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/img/favicon/favicon-180.png">
+<link rel="manifest" href="/img/favicon/manifest.webmanifest"></head>
+  <body onload="addInteractivity();"><header class="hidden-print-only">
+  <div class="nav center-responsive">
+    <div class="center push-left full-width-mobile-only">
+      <a class="nav-name push-left" href="/">CHARLES BURGESS</a>
+      <img src="/img/icons/menu.svg" class="mobile-only nav-icon" alt="menu icon" onclick="toggleMenu()" height="16px" width="16px">
+    </div>
+    <hr class="mobile-only hidden">
+    <a class="nav-link padding-medium hidden-mobile-only" href="/lead-with-joy">LEAD WITH JOY</a>
+    <a class="nav-link padding-medium hidden-mobile-only" href="/contact">CONTACT</a>
+
+    <a class="nav-link padding-medium hidden-mobile-only" href="/search">
+      <img class="nav-icon" height="18" src="/img/icons/search.svg">
+    </a>
+  </div>
+</header>
+
+<script>
+  function toggleMenu() {
+    const header = document.getElementsByTagName("header")[0];
+    const divider = document.getElementsByTagName("hr")[0];
+    const navLinks = document.getElementsByClassName("nav-link");
+
+    divider
+      .classList
+      .toggle("hidden");
+
+    for (link of navLinks) {
+      link
+        .classList
+        .toggle("hidden-mobile-only");
+    }
+  }
+</script>
+
+<script>
+  function addInteractivity() {
+    const clickables = document.getElementsByClassName("clickable");
+    for (clickable of clickables) {
+      const url = clickable.getAttribute("data-href");
+      const isExternal = url.startsWith("http");
+      if (url) {
+        clickable.addEventListener("click", () => window.open(
+          url, isExternal
+          ? "_blank"
+          : "_self"));
+      }
+    }
+  }
+</script><main>
+      <h1>
+  Playbooks
+</h1>
+
+<div class="cards stack"><div class="card round shadow clickable" data-href="/posts/playbook-retro/"><div class="card-container"><div class="center"><a href="/posts/playbook-retro/"><img src="/img/icons/playbook.svg" alt="playbook" class="no-shadow"></a></div><div class="card-details"><a href="/posts/playbook-retro/" class="margin-none card-title max-lines-2">The Retro Playbook</a><p class="margin-none max-lines-3">How to keep retros feeling fresh and hand-crafted for the moment your team is reflecting upon</p></div></div></div><div class="card round shadow clickable" data-href="/posts/playbook-standup/"><div class="card-container"><div class="center"><a href="/posts/playbook-standup/"><img src="/img/icons/playbook.svg" alt="playbook" class="no-shadow"></a></div><div class="card-details"><a href="/posts/playbook-standup/" class="margin-none card-title max-lines-2">The Standup Playbook</a><p class="margin-none max-lines-3">How to find the most effective format for the challenges your team is facing today</p></div></div></div></div>
+
+<div class="center margin-xlarge-vertical">
+  <a class="font-size-subheading" href="/lead-with-joy">← Back to the Hub</a>
+</div>
+    </main><footer class="hidden-print-only">
+  <div class="footer-main-container">
+    <div>
+      <h2>Go</h2>
+
+      <a href="/">
+        <p>Home</p>
+      </a>
+
+      <a href="/lead-with-joy">
+        <p>Lead with Joy</p>
+      </a>
+
+      <a href="/contact">
+        <p>Contact</p>
+      </a>
+    </div>
+    <div>
+      <h2>Listen</h2>
+
+      <a href="https://open.spotify.com/show/2CpRcrHepkqSe0TswfguZT" target="_blank">
+        <p>Spotify</p>
+      </a>
+
+      <a href="https://podcasts.apple.com/us/podcast/lead-with-joy/id1729112497" target="_blank">
+        <p>Apple Podcasts</p>
+      </a>
+
+      <a href="https://feeds.captivate.fm/lead-with-joy/" target="_blank">
+        <p>Web &nbsp;( RSS Feed )</p>
+      </a>
+    </div>
+    <div>
+      <h2>Connect</h2>
+
+      <a href="" rel="noopener noreferrer" target="_blank">
+        <p>GitHub</p>
+      </a>
+
+      <a href="https://youtube.com/@cvburgess" rel="noopener noreferrer" target="_blank">
+        <p>YouTube</p>
+      </a>
+
+      <a href="" rel="noopener noreferrer" target="_blank">
+        <p>Patreon</p>
+      </a>
+    </div>
+  </div>
+
+  <div class="center no-wrap margin-medium-vertical">
+    <span class="line outer-line"></span>
+    <p class="line copyright">Charles Burgess © 2023</p>
+    <span class="line outer-line"></span>
+  </div>
+</footer>
+</body></html>
