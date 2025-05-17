@@ -6,14 +6,14 @@ tags:
   - planning
 type: deep-dive
 title: Good Better Best
-description: The Good/Better/Best method allows teams to break down ideas quickly and identify the most impactful milestones given existing deadlines and constraints
+description: The Good Better Best method allows teams to break down ideas quickly and identify the most impactful milestones given existing deadlines and constraints
 date: 2025-05-17
 episodeId: 
 draft: false
 ---
 When given an epic, feature, task, or other ambiguous unit of work, it is often up to teams to break that work down and find the optimal path to delivery. 
 
-
+The Good/Better/Best method allows teams to break down ideas quickly and identify the most impactful milestones given existing deadlines and constraints
 ## Good
 
 When breaking work down it is critical to know what the least you can do is, genuinely and still call the delivery a success. This is often referred to as the minimum viable product or "MVP". The question the team should answer is:
