@@ -1,7 +1,7 @@
 import lume from "lume/mod.ts";
 import { Page, RawData } from "lume/core/file.ts";
 
-import jsx from "lume/plugins/jsx_preact.ts";
+import jsx from "lume/plugins/jsx.ts";
 import pagefind from "lume/plugins/pagefind.ts";
 import vento from "lume/plugins/vento.ts";
 import toc from "https://deno.land/x/lume_markdown_plugins/toc.ts";
@@ -60,7 +60,8 @@ site.hooks.addMarkdownItPlugin(container, {
 
 // --------- PUBLIC FILES ---------- //
 
-site.copyRemainingFiles();
+site.add("img");
+site.add("css");
 
 // --------- CUSTOM FILE LOADERS ---------- //
 
@@ -72,7 +73,7 @@ async function svgLoader(path: string): Promise<RawData> {
   return { content };
 }
 
-site.loadAssets([".svg"], svgLoader);
+site.loadData([".svg"], svgLoader);
 
 // --------- FILTERS ---------- //
 
