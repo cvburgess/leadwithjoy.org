@@ -2,11 +2,11 @@
 layout: base.vto
 ---
 <h1>
-  {{ if it.title }}{{ title }}{{ else }}Results for <strong>{{ term | upper }}{{ /if }}
+  {{ if title }}{{ title }}{{ else }}Results for <strong>{{ term | upper }}{{ /if }}
 </h1>
 
 <div class="cards stack">
-  {{ for post of it.posts }}
+  {{ for post of posts }}
     {{ comp.card({ title: post.title, description: post.description, icon: post.type, url: post.url }) }}
   {{ /for }}
 </div>

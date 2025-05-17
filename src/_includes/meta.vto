@@ -1,18 +1,18 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="{{ it.description || metadata.description }}"/>
-<meta property="og:title" content="{{ it.title || (it.episode && it.episode.title) || metadata.title }}"/>
+<meta name="description" content="{{ description || metadata.description }}"/>
+<meta property="og:title" content="{{ title || (episode && episode.title) || metadata.title }}"/>
 <meta
   property="og:description"
-  content="{{ it.description || (it.episode && it.episode.description) || metadata.description }}"
+  content="{{ description || (episode && episode.description) || metadata.description }}"
 />
-<meta property="og:image" content="{{ it.ogImage ? `/img/og/og-${it.ogImage}.jpg` : (it.type ? `/img/og/og-${it.type}.jpg` : '/img/og/og-default.jpg') }}"/>
+<meta property="og:image" content="{{ ogImage ? `/img/og/og-${ogImage}.jpg` : (type ? `/img/og/og-${type}.jpg` : '/img/og/og-default.jpg') }}"/>
 <meta property="og:image:type" content="image/jpg"/>
 <meta property="og:image:width" content="1024"/>
 <meta property="og:image:height" content="1024"/>
 
 <title>
-  {{ if it.title }}{{ it.title }} • {{ /if }}Lead with Joy</title>
+  {{ if title }}{{ title }} • {{ /if }}Lead with Joy</title>
 
 <link rel="stylesheet" href="/css/index.css"/>
 <link
