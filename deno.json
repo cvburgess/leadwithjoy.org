@@ -9,7 +9,7 @@
     "lume/jsx-runtime": "https://deno.land/x/ssx@v0.1.9/jsx-runtime.ts"
   },
   "compilerOptions": {
-   "jsx": "react-jsx",
+    "jsx": "react-jsx",
     "jsxImportSource": "lume",
     "types": [
       "lume/types.ts"
