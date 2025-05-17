@@ -1,5 +1,5 @@
 import lume from "lume/mod.ts";
-import { Page, RawData } from "lume/core/file.ts";
+import { Page } from "lume/core/file.ts";
 
 import jsx from "lume/plugins/jsx.ts";
 import pagefind from "lume/plugins/pagefind.ts";
@@ -11,7 +11,7 @@ import { container } from "npm:@mdit/plugin-container";
 
 import { processPreviews } from "./src/utils/processPreviews.ts";
 
-const BASE_URL = "https://cvburgess.com";
+const BASE_URL = "https://leadwithjoy.org";
 const PRIMARY_COLOR = "#ffbc51";
 
 const site = lume({
@@ -60,20 +60,23 @@ site.hooks.addMarkdownItPlugin(container, {
 
 // --------- PUBLIC FILES ---------- //
 
-site.add("img");
-site.add("css");
+site.add([".css"]);
+site.add([".jpg", ".jpeg", ".gif", ".png", ".webp", ".svg", ".ico"]);
 
 // --------- CUSTOM FILE LOADERS ---------- //
 
 // Replace css-style variables with their values in SVGs
 // When the site color changes, the SVGs update automatically
-async function svgLoader(path: string): Promise<RawData> {
-  let content = await Deno.readTextFile(path);
-  content = content.replace(/--primary/gi, PRIMARY_COLOR);
-  return { content };
-}
-
-site.loadData([".svg"], svgLoader);
+//
+// TODO: Replace with Tailwind CSS - https://tailwindcss.com/docs/fill
+site.process([".svg"], (pages) => {
+  for (const page of pages) {
+    const decoder = new TextDecoder();
+    const content = decoder.decode(page.content as Uint8Array);
+    console.log(content);
+    page.content = content.replace(/--primary/gi, PRIMARY_COLOR);
+  }
+});
 
 // --------- FILTERS ---------- //
 
