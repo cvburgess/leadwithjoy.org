@@ -3,7 +3,6 @@ import { Page } from "lume/core/file.ts";
 
 import jsx from "lume/plugins/jsx.ts";
 import pagefind from "lume/plugins/pagefind.ts";
-import vento from "lume/plugins/vento.ts";
 import toc from "https://deno.land/x/lume_markdown_plugins/toc.ts";
 
 import anchor from "npm:markdown-it-anchor";
@@ -22,7 +21,6 @@ const site = lume({
   },
 });
 
-site.use(vento());
 site.use(jsx());
 site.use(pagefind());
 site.use(toc());
