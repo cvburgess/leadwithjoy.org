@@ -142,7 +142,7 @@ format to run and works in virtually every scenario.
 
 When the team has done a dozen or so retros and the energy in the room is
 healthy, supportive, and focused, I like to take my hands off the wheel a bit
-and empower the team to own data.
+and empower the team to own it.
 
 Two ways I do this are by asking for volunteers to host (or by reaching out to
 people I know would do a phenomenal job) and by allowing the team to pick their
