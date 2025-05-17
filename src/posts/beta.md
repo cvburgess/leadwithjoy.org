@@ -15,7 +15,7 @@ draft: true
 
 ## Section One
 
-Lorem ipsum dolor sit amet, consectetur adipiscing eldata. Sed vitae nisi auctor,
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae nisi auctor,
 convallis nisl vel, eleifend enim.
 
 ### List of Items
@@ -39,7 +39,7 @@ ligula sed urna.
 
 Sed euismod, sem ac ultrices euismod, dolor diam hendrerit ipsum, quis venenatis
 nisi sem in magna. Sed pretium, dui sed vulputate ultricies, nunc neque
-consequat risus, in viverra nibh arcu nec veldata. Donec efficitur, mauris a
+consequat risus, in viverra nibh arcu nec velit. Donec efficitur, mauris a
 pulvinar ultrices, metus justo consequat dui, nec placerat sem elit ut nibh. Sed
 vitae ante quis arcu feugiat gravida. Donec viverra, nunc at elementum
 efficitur, magna nulla posuere mauris, a porttitor mauris erat eu ligula. Donec
@@ -51,5 +51,5 @@ finibus. Pellentesque habitant morbi tristique senectus et netus et malesuada
 fames ac turpis egestas. Nullam vitae felis auctor, aliquet dui sed, rhoncus
 nibh. Sed euismod, sem ac ultrices euismod, dolor diam hendrerit ipsum, quis
 venenatis nisi sem in magna. Sed pretium, dui sed vulputate ultricies, nunc
-neque consequat risus, in viverra nibh arcu nec veldata. Donec efficitur, mauris a
+neque consequat risus, in viverra nibh arcu nec velit. Donec efficitur, mauris a
 pulvinar

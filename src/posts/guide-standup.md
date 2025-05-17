@@ -50,7 +50,7 @@ today_? As a leader, this is not a message you want to start every day with.
 
 With the above sentiments taken into account, I often hear that standups do not
 yield 15 minutes worth of valuable insights and therefore its hard to justify
-disrupting a whole team's time for data. This can lead teams to experiment with
+disrupting a whole team's time for it. This can lead teams to experiment with
 async standups or skip the process altogether.
 
 In my experience, async standups are, often times, even worse. Now, rather than
