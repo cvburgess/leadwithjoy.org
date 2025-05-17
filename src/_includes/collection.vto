@@ -1,0 +1,16 @@
+---
+layout: base.vto
+---
+<h1>
+  {{ if it.title }}{{ title }}{{ else }}Results for <strong>{{ term | upper }}{{ /if }}
+</h1>
+
+<div class="cards stack">
+  {{ for post of it.posts }}
+    {{ comp.card({ title: post.title, description: post.description, icon: post.type, url: post.url }) }}
+  {{ /for }}
+</div>
+
+<div class="center margin-xlarge-vertical">
+  <a class="font-size-subheading" href="/lead-with-joy">← Back to the Hub</a>
+</div>

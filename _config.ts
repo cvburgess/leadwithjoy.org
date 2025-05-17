@@ -3,7 +3,7 @@ import { Page, RawData } from "lume/core/file.ts";
 
 import jsx from "lume/plugins/jsx_preact.ts";
 import pagefind from "lume/plugins/pagefind.ts";
-import nunjucks from "lume/plugins/nunjucks.ts";
+import vento from "lume/plugins/vento.ts";
 import toc from "https://deno.land/x/lume_markdown_plugins/toc.ts";
 
 import anchor from "npm:markdown-it-anchor";
@@ -22,7 +22,7 @@ const site = lume({
   },
 });
 
-site.use(nunjucks());
+site.use(vento());
 site.use(jsx());
 site.use(pagefind());
 site.use(toc());
@@ -121,9 +121,8 @@ site.helper("button", (text, link, classes) => {
   const target = link?.startsWith("/")
     ? `target="_self"`
     : `target="_blank" rel="noopener"`;
-  return `<div class="button ${
-    classes || ""
-  }"><a href="${link}" ${target}><span>${text}</span></a></div>`;
+  return `<div class="button ${classes || ""
+    }"><a href="${link}" ${target}><span>${text}</span></a></div>`;
 }, { type: "tag" });
 
 export default site;

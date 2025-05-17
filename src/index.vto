@@ -1,5 +1,5 @@
 ---
-layout: base.njk
+layout: base.vto
 ogImage: joy
 ---
 <h1 class="title">Lead with Joy</h1>
@@ -17,11 +17,11 @@ ogImage: joy
 <h1 class="title">Listen to the Podcast</h1>
 <p class="subtitle">Prefer to soak up tidbits while commuting or walking the dog? <br/> Grab the pod and live your best life.</p>
 <div class="podcast-links center-responsive margin-xlarge-vertical">
-  <a href="{{ metadata.links.podcast.apple }}">
+  <a href="{{ it.metadata.links.podcast.apple }}">
     <span class="tag accent-purple">Apple Podcasts</span></a>
-  <a href="{{ metadata.links.podcast.spotify }}">
+  <a href="{{ it.metadata.links.podcast.spotify }}">
     <span class="tag accent-green">Spotify</span></a>
-  <a href="{{ metadata.links.podcast.rss }}">
+  <a href="{{ it.metadata.links.podcast.rss }}">
     <span class="tag accent-blue">Web Player &nbsp;/&nbsp; RSS Feed</span></a>
 </div>
 
@@ -29,11 +29,11 @@ ogImage: joy
 <p class="subtitle">The same basic ideas, but different shapes and sizes.</p>
 
 <div class="cards small center">
-  {{ comp.card({ title: "Crash Courses", icon: "crash-course", url: "/tags/crash-course/" }) | safe }}
-  {{ comp.card({ title: "Playbooks", icon: "playbook", url: "/tags/playbook/" }) | safe }}
+  {{ comp.card({ title: "Crash Courses", icon: "crash-course", url: "/tags/crash-course/" }) }}
+  {{ comp.card({ title: "Playbooks", icon: "playbook", url: "/tags/playbook/" }) }}
   <div class="break-on-wrap"></div>
-  {{ comp.card({ title: "Guides", icon: "guide", url: "/tags/guide/" }) | safe }}
-  {{ comp.card({ title: "Deep Dives", icon: "deep-dive", url: "/tags/deep-dive/" }) | safe }}
+  {{ comp.card({ title: "Guides", icon: "guide", url: "/tags/guide/" }) }}
+  {{ comp.card({ title: "Deep Dives", icon: "deep-dive", url: "/tags/deep-dive/" }) }}
 </div>
 
 <h1 class="title">Search All Posts</h1>
@@ -44,9 +44,9 @@ ogImage: joy
 <p class="subtitle">Some things I've been thinking on lately.</p>
 
 <div class="cards stack">
-  {%- for post in search.pages("type=crash-course|playbook|deep-dive|guide", "date=desc", 10) -%}
-    {{ comp.card({ title: post.title, description: post.description, icon: post.type, url: post.url }) | safe }}
-  {%- endfor -%}
+  {{ for post of search.pages("type=crash-course|playbook|deep-dive|guide", "date=desc", 10) }}
+    {{ comp.card({ title: post.title, description: post.description, icon: post.type, url: post.url }) }}
+  {{ /for }}
 </div>
 
 <p class="margin-xlarge">

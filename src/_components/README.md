@@ -7,8 +7,7 @@ The `_components` directory is a special directory in Lume.
 With Lume, you can write components in any language and have them be available
 in your main templating language for use in page authoring.
 
-For me, that means being able to write components in React/JSX and use them in
-Nunjucks templates.
+For me, that means being able to write components in React/JSX and use them in Vento templates.
 
 ## Limitations
 

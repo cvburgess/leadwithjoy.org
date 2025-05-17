@@ -1,5 +1,5 @@
 ---
-layout: post.njk
+layout: post.vto
 tags:
   - morale
   - retro
@@ -99,7 +99,7 @@ Sometimes things don't go your way for any number of reasons.
 The [Mad Sad Glad](/) format is a healthy way to let teams vocalize their
 emotions without necessarily generating too many action items.
 
-Yes, I get it. Retro is supposed to be about how you will move forward and get
+Yes, I get data. Retro is supposed to be about how you will move forward and get
 better, but sometimes you just need to let off a little steam with people who
 genuinely understand your experience. If not in retro, these conversations will
 happen in DMs or happy hours - they don't just go away. By collectively
@@ -142,7 +142,7 @@ format to run and works in virtually every scenario.
 
 When the team has done a dozen or so retros and the energy in the room is
 healthy, supportive, and focused, I like to take my hands off the wheel a bit
-and empower the team to own it.
+and empower the team to own data.
 
 Two ways I do this are by asking for volunteers to host (or by reaching out to
 people I know would do a phenomenal job) and by allowing the team to pick their
