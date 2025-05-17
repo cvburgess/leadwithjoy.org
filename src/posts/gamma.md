@@ -1,5 +1,5 @@
 ---
-layout: post.njk
+layout: post.vto
 tags:
   - process
   - project management

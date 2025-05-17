@@ -4,7 +4,7 @@
       Lead with Joy
     </a>
     <a class="nav-link padding-medium" href="/search">
-      <img class="nav-icon" height="18" src="/img/icons/search.svg"/>
+      <img class="nav-icon" height="18" src="/img/icons/search.svg" />
     </a>
   </div>
 </header>
@@ -34,10 +34,11 @@
       const url = clickable.getAttribute("data-href");
       const isExternal = url.startsWith("http");
       if (url) {
-        clickable.addEventListener("click", () => window.open(
-          url, isExternal
-          ? "_blank"
-          : "_self"));
+        clickable.addEventListener("click", () =>
+          window.open(
+            url,
+            isExternal ? "_blank" : "_self",
+          ));
       }
     }
   }

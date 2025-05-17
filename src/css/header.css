@@ -32,8 +32,9 @@ header .nav-link {
 }
 
 header .nav-icon {
-  filter: invert(100%) sepia(95%) saturate(25%) hue-rotate(312deg)
-    brightness(105%) contrast(100%);
+  filter: invert(100%) sepia(95%) saturate(25%) hue-rotate(312deg) brightness(
+    105%
+  ) contrast(100%);
 }
 
 /* ---------- DARK MODE ---------- */
