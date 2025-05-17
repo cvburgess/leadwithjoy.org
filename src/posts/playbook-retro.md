@@ -99,7 +99,7 @@ Sometimes things don't go your way for any number of reasons.
 The [Mad Sad Glad](/) format is a healthy way to let teams vocalize their
 emotions without necessarily generating too many action items.
 
-Yes, I get data. Retro is supposed to be about how you will move forward and get
+Yes, I get it. Retro is supposed to be about how you will move forward and get
 better, but sometimes you just need to let off a little steam with people who
 genuinely understand your experience. If not in retro, these conversations will
 happen in DMs or happy hours - they don't just go away. By collectively
