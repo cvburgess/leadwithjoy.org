@@ -3,7 +3,7 @@ layout: base.vto
 ---
 
 <div>
-  <h1 class="text-center text-3xl font-bold my-32">{{ title }}</h1>
+  <h1 class="text-center text-3xl font-bold my-16">{{ title }}</h1>
   <div class="flex items-center justify-center">
     <div class="w-1/2 border-b-4 border-neutral opacity-10"></div>
     <img class="h-20 w-20 mx-16" src="/img/icons/{{ type }}.svg" aria-hidden="true" alt="{{ type }} icon"/>
@@ -57,7 +57,7 @@ layout: base.vto
 {{ set relatedPosts = search.pages(searchTerm, "date", 3) }}
 
 {{ if relatedPosts && relatedPosts.length }}
-  <h1 class="text-center text-3xl font-bold my-32">Dive a little deeper</h1>
+  <h1 class="text-center text-3xl font-bold my-16">Dive a little deeper</h1>
   <p class="text-center text-subtext font-normal text-lg italic my-2 mb-8">Related posts, videos, and podcast episodes</p>
 
   <div class="flex flex-col">

@@ -1,53 +1,14 @@
-<header class="hidden print:hidden bg-primary dark:bg-base-200 rounded-b-[50%_/_8%] text-base-content font-bold">
-  <div class="navbar max-w-[1200px] mx-auto px-4 md:px-16 py-4 md:py-8">
+<header class="">
+  <div class="navbar bg-primary text-[#fff] m-12 px-8 py-4 rounded-box shadow-md max-w-[calc(100%-6rem)]">
     <div class="navbar-start">
-      <a class="text-xl md:text-2xl font-bold" href="/">
+      <a class="text-xl md:text-3xl font-black" href="/">
         Lead with Joy
       </a>
     </div>
     <div class="navbar-end">
       <a class="btn btn-ghost" href="/search">
-        <img class="h-[18px] dark:invert" src="/img/icons/search.svg" alt="Search"/>
+        <img class="h-[18px]" src="/img/icons/search.svg" alt="Search"/>
       </a>
     </div>
   </div>
 </header>
-
-<script>
-  function toggleMenu() {
-    const header = document.getElementsByTagName("header")[0];
-    const divider = document.getElementsByTagName("hr")[0];
-    const navLinks = document
-      .getElementsByClassName("navbar-end")[0]
-      .getElementsByTagName("a");
-
-    if (divider) {
-      divider
-        .classList
-        .toggle("hidden");
-    }
-
-    for (link of navLinks) {
-      link
-        .classList
-        .toggle("sm:hidden");
-    }
-  }
-</script>
-
-<script>
-  function addInteractivity() {
-    const clickables = document.querySelectorAll(".cursor-pointer[data-href]");
-    for (clickable of clickables) {
-      const url = clickable.getAttribute("data-href");
-      const isExternal = url
-        ?.startsWith("http");
-      if (url) {
-        clickable.addEventListener("click", () => window.open(
-          url, isExternal
-          ? "_blank"
-          : "_self"));
-      }
-    }
-  }
-</script>
