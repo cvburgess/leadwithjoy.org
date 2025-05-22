@@ -1,47 +1,22 @@
-<footer class="hidden-print-only">
-  <div class="footer-main-container">
-    <div>
-      <h2>Go</h2>
-
-      <a href="/">
-        <p>Home</p>
-      </a>
+<footer class="bg-base-100 mt-16 pt-16 pb-2 px-4 md:px-16 text-center rounded-t-[50%_/_8%] shadow-md">
+  <div class="flex flex-col md:flex-row flex-wrap gap-8">
+    <div class="flex-1 flex flex-col gap-2">
+      <h2 class="footer-title text-xl font-black mb-4">Go</h2>
+      <a href="/" class="link link-hover text-sm">Home</a>
     </div>
-    <div>
-      <h2>Listen</h2>
-
-      <a href="{{ metadata.links.podcast.spotify }}">
-        <p>Spotify</p>
-      </a>
-
-      <a href="{{ metadata.links.podcast.apple }}">
-        <p>Apple Podcasts</p>
-      </a>
-
-      <a href="{{ metadata.links.podcast.rss }}">
-        <p>Web &nbsp;( RSS Feed )</p>
-      </a>
+    <div class="flex-1 flex flex-col gap-2">
+      <h2 class="footer-title text-xl font-black mb-4">Listen</h2>
+      <a href="{{ metadata.links.podcast.spotify }}" class="link link-hover text-sm">Spotify</a>
+      <a href="{{ metadata.links.podcast.apple }}" class="link link-hover text-sm">Apple Podcasts</a>
+      <a href="{{ metadata.links.podcast.rss }}" class="link link-hover text-sm">RSS</a>
     </div>
-    <div>
-      <h2>Connect</h2>
-
-      <a href="{{ metadata.links.cvburgess }}" rel="noopener noreferrer" target="_blank">
-        <p>About Me</p>
-      </a>
-
-      <a href="{{ metadata.repoUrl }}" rel="noopener noreferrer" target="_blank">
-        <p>GitHub</p>
-      </a>
-
-      <a href="{{ metadata.links.youtube }}" rel="noopener noreferrer" target="_blank">
-        <p>YouTube</p>
-      </a>
+    <div class="flex-1 flex flex-col gap-2">
+      <h2 class="footer-title text-xl font-black mb-4">Connect</h2>
+      <a href="{{ metadata.links.cvburgess }}" rel="noopener noreferrer" target="_blank" class="link link-hover text-sm">About Me</a>
+      <a href="{{ metadata.repoUrl }}" rel="noopener noreferrer" target="_blank" class="link link-hover text-sm">GitHub</a>
+      <a href="{{ metadata.links.youtube }}" rel="noopener noreferrer" target="_blank" class="link link-hover text-sm">YouTube</a>
     </div>
   </div>
 
-  <div class="center no-wrap margin-medium-vertical">
-    <span class="line outer-line"></span>
-    <p class="line copyright">Charles Burgess © 2025</p>
-    <span class="line outer-line"></span>
-  </div>
+  <div class="divider max-w-[800px] mx-auto my-8 opacity-50">Charles Burgess © 2025</div>
 </footer>

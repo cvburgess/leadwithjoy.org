@@ -11,23 +11,23 @@ export default function Preview(
 ) {
   return (
     <div
-      className="card preview round shadow clickable"
+      className="card bg-base-200 dark:bg-base-300 shadow-md hover:shadow-lg transition-all duration-200 cursor-pointer rounded-box my-8 md:my-16 text-sm"
       data-href={url}
     >
-      <div className="card-container">
-        <div className="center">
+      <div className="flex flex-col sm:flex-row w-full p-4 md:p-8">
+        <div className="flex justify-center items-center mb-4 sm:mb-0">
           <a href={url}>
-            {image && <img src={image} alt={`Image for ${title}`} />}
+            {image && <img src={image} alt={`Image for ${title}`} className="w-full sm:w-[200px] h-[120px] sm:h-[150px] object-cover rounded-lg" />}
           </a>
         </div>
-        <div className="card-details">
-          <a href={url} className="margin-none card-title max-lines-2">
+        <div className="flex-1 sm:ml-8 md:ml-16 text-center sm:text-left">
+          <a href={url} className="card-title text-lg md:text-xl font-bold line-clamp-2">
             {title}
           </a>
           {description && (
-            <p className="margin-none max-lines-3">{description}</p>
+            <p className="line-clamp-2 md:line-clamp-3 my-2">{description}</p>
           )}
-          <p className="push-down preview-url">{hostname}</p>
+          <p className="mt-2 text-primary font-semibold">{hostname}</p>
         </div>
       </div>
     </div>

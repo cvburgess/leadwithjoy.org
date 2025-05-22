@@ -3,9 +3,9 @@
   <head>
     {{ include "meta.vto" }}
   </head>
-  <body onload="addInteractivity();">
+  <body class="min-h-screen bg-base-200 text-base-content font-normal flex flex-col">
     {{ include "header.html" }}
-    <main>
+    <main class="flex-grow mx-auto px-4 sm:px-8 md:px-16 lg:px-32 max-w-[1200px]">
       {{ content }}
     </main>
     {{ include "footer.vto" }}

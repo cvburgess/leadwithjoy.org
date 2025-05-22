@@ -12,37 +12,37 @@ export default function Card(
   const isExternal = url.startsWith("http");
   return (
     <div
-      className="card round shadow clickable"
+      className="card bg-base-100 shadow-lg hover:shadow-xl transition-all duration-200 cursor-pointer rounded-box m-4 p-8 md:p-16"
       data-href={url}
     >
-      <div className="card-container">
-        <div className="center">
+      <div className="flex flex-col sm:flex-row w-full h-full">
+        <div className="flex justify-center items-center sm:w-auto w-full mb-4 sm:mb-0">
           <a
             href={url}
             target={isExternal ? "_blank" : undefined}
             rel={isExternal ? "noopener noreferrer" : undefined}
           >
-            {imgUrl && <img src={imgUrl} alt={`Image for ${title}`} />}
+            {imgUrl && <img src={imgUrl} alt={`Image for ${title}`} className="w-[80px] h-[80px] sm:w-[100px] sm:h-[100px]" />}
             {icon && (
               <img
                 src={`/img/icons/${icon}.svg`}
                 alt={icon}
-                class="no-shadow"
+                className="w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] dark:invert-[0.85]"
               />
             )}
           </a>
         </div>
-        <div className="card-details">
+        <div className="flex-1 sm:ml-8 md:ml-16 text-center sm:text-left">
           <a
             href={url}
-            className="margin-none card-title max-lines-2"
+            className="text-2xl font-bold line-clamp-2"
             target={isExternal ? "_blank" : undefined}
             rel={isExternal ? "noopener noreferrer" : undefined}
           >
             {title}
           </a>
           {description && (
-            <p className="margin-none max-lines-3">{description}</p>
+            <p className="mt-4 line-clamp-3">{description}</p>
           )}
         </div>
       </div>

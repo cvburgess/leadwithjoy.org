@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@plugin "@tailwindcss/typography";
+
+@plugin "daisyui";
+
+:root {
+  --color-base-100: #fff;
+  --color-base-200: #fbfaf3;
+  --color-base-300: oklch(91% 0.018 78.24);
+  --color-base-content: #3e3d37;
+  --color-primary: #ffbc51;
+  --color-primary-content: oklch(41% 0.112 45.904);
+  --color-secondary: oklch(27.12% 0.188 264.052);
+  --color-secondary-content: oklch(88% 0.059 254.128);
+  --color-accent: #a673e6;
+  --color-accent-content: oklch(28% 0.141 291.089);
+  --color-neutral: oklch(38.84% 0.044 44.12);
+  --color-neutral-content: oklch(99% 0.01 78.24);
+  --color-info: #55cee0;
+  --color-info-content: oklch(29% 0.066 243.157);
+  --color-success: #94cc6f;
+  --color-success-content: oklch(39% 0.095 152.535);
+  --color-warning: oklch(82% 0.189 84.429);
+  --color-warning-content: oklch(41% 0.112 45.904);
+  --color-error: #ff7a5c;
+  --color-error-content: oklch(27% 0.105 12.094);
+  --radius-selector: 2rem;
+  --radius-field: 2rem;
+  --radius-box: 1rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 0;
+  --noise: 0;
+}
+
+/* Dark mode colors */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark light;
+    --background: #363530;
+    --background-contrast: #44423c;
+    --text: #e5e0c1;
+    --subtext: #b2af97;
+    --divider: rgba(179, 175, 151, 0.25);
+    --shadow-hover: 0px 0px 20px 5px rgba(0, 0, 0, 0.2);
+  }
+}
+
+:root {
+  /* ---------- PAGEFIND ---------- */
+  --pagefind-ui-scale: 1;
+  --pagefind-ui-primary: var(--primary);
+  --pagefind-ui-text: var(--text);
+  --pagefind-ui-background: transparent;
+  --pagefind-ui-border: var(--divider);
+  /* --pagefind-ui-tag: <color> */
+  --pagefind-ui-border-width: 2px;
+  --pagefind-ui-border-radius: var(--roundness);
+  /* --pagefind-ui-image-border-radius: 8px; */
+  /* --pagefind-ui-image-box-ratio: 3 / 2; */
+  --pagefind-ui-font: var(--font-family-heading);
+}

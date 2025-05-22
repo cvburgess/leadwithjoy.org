@@ -1,42 +1,41 @@
 ---
 layout: base.vto
 ---
-<link rel="stylesheet" href="/css/post.css"/>
 
 <div>
-  <h1 class="title">{{ title }}</h1>
-  <div class="center no-wrap">
-    <span class="line outer-line"></span>
-    <img class="line post-icon no-shadow" src="/img/icons/{{ type }}.svg" aria-hidden="true" alt="{{ type }} icon"/>
-    <span class="line outer-line"></span>
+  <h1 class="text-center text-3xl font-bold my-32">{{ title }}</h1>
+  <div class="flex items-center justify-center">
+    <div class="w-1/2 border-b-4 border-neutral opacity-10"></div>
+    <img class="h-20 w-20 mx-16" src="/img/icons/{{ type }}.svg" aria-hidden="true" alt="{{ type }} icon"/>
+    <div class="w-1/2 border-b-4 border-neutral opacity-10"></div>
   </div>
 </div>
 
-<div class="post">
+<div class="flex flex-wrap -mt-4">
 
   {{ if videoId }}
-    <div class="video-player">
-      <iframe src="https://www.youtube-nocookie.com/embed/{{ videoId }}" frameborder="no" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="flex mt-8 w-full rounded-box shadow-md p-4 bg-base-200 aspect-[500/315] overflow-hidden">
+      <iframe class="w-full h-full rounded-lg" src="https://www.youtube-nocookie.com/embed/{{ videoId }}" frameborder="no" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
   {{ /if }}
 
   {{ if episodeId }}
-    <div class="podcast-player">
-      <iframe frameborder="no" scrolling="no" src="https://player.captivate.fm/episode/{{ episodeId }}"></iframe>
+    <div class="mt-8 rounded-box shadow-md p-4 w-full h-[200px] overflow-hidden bg-base-200">
+      <iframe class="w-full h-[200px] rounded-lg" frameborder="no" scrolling="no" src="https://player.captivate.fm/episode/{{ episodeId }}"></iframe>
     </div>
   {{ /if }}
 
   {{ if toc && toc.length }}
-    <nav class="post-nav">
-      <ol>
+    <nav class="sticky top-16 self-start w-1/3 max-w-64 flex mr-16 mt-[calc(4rem+14px)]">
+      <ol class="list-none p-0 m-0">
         {{ for item of toc }}
-          <li>
-            <a href="#{{ item.slug }}">{{ item.text }}</a>
+          <li class="mb-4">
+            <a href="#{{ item.slug }}" class="flex font-normal text-sm text-base-content no-underline hover:text-primary transition-all duration-50 text-balance leading-6">{{ item.text }}</a>
             {{ if item.children && item.children.length }}
-              <ul>
+              <ul class="list-none mt-4 pl-4">
                 {{ for child of item.children }}
-                  <li>
-                    <a href="#{{ child.slug }}">{{ child.text }}</a>
+                  <li class="mb-4">
+                    <a href="#{{ child.slug }}" class="flex font-normal text-sm text-base-content no-underline hover:text-primary transition-all duration-50 text-balance leading-6">{{ child.text }}</a>
                   </li>
                 {{ /for }}
               </ul>
@@ -47,7 +46,7 @@ layout: base.vto
     </nav>
   {{ /if }}
 
-  <div class="post-content">
+  <div class="flex-1">
     {{ content }}
   </div>
 
@@ -58,23 +57,23 @@ layout: base.vto
 {{ set relatedPosts = search.pages(searchTerm, "date", 3) }}
 
 {{ if relatedPosts && relatedPosts.length }}
-  <h1 class="title">Dive a little deeper</h1>
-  <p class="subtitle">Related posts, videos, and podcast episodes</p>
+  <h1 class="text-center text-3xl font-bold my-32">Dive a little deeper</h1>
+  <p class="text-center text-subtext font-normal text-lg italic my-2 mb-8">Related posts, videos, and podcast episodes</p>
 
-  <div class="cards stack">
+  <div class="flex flex-col">
     {{ for post of relatedPosts }}
       {{ comp.card({ title: post.title, description: post.description, icon: post.type, url: post.url }) }}
     {{ /for }}
   </div>
 {{ /if }}
 
-<div class="center margin-xlarge-vertical hidden-print-only">
-  <a class="margin-medium font-size-subheading" href="/lead-with-joy">← Back to the Hub</a>
-  <span class="margin-medium hidden-mobile-only font-size-subheading"> • </span>
-  <a class="margin-medium font-size-subheading" href="{{ metadata.repoUrl }}/blob/main/src{{ inputPath }}">Suggest an Edit on GitHub</a>
+<div class="flex items-center justify-center flex-wrap my-16 print:hidden">
+  <a class="mx-4 text-lg" href="/lead-with-joy">← Back to the Hub</a>
+  <span class="mx-4 text-lg hidden sm:inline"> • </span>
+  <a class="mx-4 text-lg" href="{{ metadata.repoUrl }}/blob/main/src{{ inputPath }}">Suggest an Edit on GitHub</a>
 </div>
 
-<div class="print-only center margin-medium">
+<div class="print:flex print:justify-center print:items-center hidden my-4">
   <p>Charles Burgess © 2025</p>
 </div>
 
@@ -90,12 +89,20 @@ layout: base.vto
           document
             .querySelector(`nav li a[href="#${id}"]`)
             .classList
-            .add('active');
+            .add('text-primary');
+          document
+            .querySelector(`nav li a[href="#${id}"]`)
+            .classList
+            .add('font-medium');
         } else {
           document
             .querySelector(`nav li a[href="#${id}"]`)
             .classList
-            .remove('active');
+            .remove('text-primary');
+          document
+            .querySelector(`nav li a[href="#${id}"]`)
+            .classList
+            .remove('font-medium');
         }
       });
     });
