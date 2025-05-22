@@ -2,6 +2,7 @@ import lume from "lume/mod.ts";
 import { Page } from "lume/core/file.ts";
 
 import jsx from "lume/plugins/jsx.ts";
+import tailwindcss from "lume/plugins/tailwindcss.ts";
 import pagefind from "lume/plugins/pagefind.ts";
 import toc from "https://deno.land/x/lume_markdown_plugins/toc.ts";
 
@@ -22,6 +23,7 @@ const site = lume({
 });
 
 site.use(jsx());
+site.use(tailwindcss());
 site.use(pagefind());
 site.use(toc());
 
@@ -71,7 +73,6 @@ site.process([".svg"], (pages) => {
   for (const page of pages) {
     const decoder = new TextDecoder();
     const content = decoder.decode(page.content as Uint8Array);
-    console.log(content);
     page.content = content.replace(/--primary/gi, PRIMARY_COLOR);
   }
 });
@@ -123,9 +124,8 @@ site.helper("button", (text, link, classes) => {
   const target = link?.startsWith("/")
     ? `target="_self"`
     : `target="_blank" rel="noopener"`;
-  return `<div class="button ${
-    classes || ""
-  }"><a href="${link}" ${target}><span>${text}</span></a></div>`;
+  return `<div class="button ${classes || ""
+    }"><a href="${link}" ${target}><span>${text}</span></a></div>`;
 }, { type: "tag" });
 
 export default site;
