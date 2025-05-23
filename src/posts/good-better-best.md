@@ -11,14 +11,16 @@ date: 2025-05-17
 episodeId: 
 draft: false
 ---
+
 When given an epic, feature, task, or other ambiguous unit of work, it is often up to teams to break that work down and find the optimal path to delivery. 
 
-The Good/Better/Best method allows teams to break down ideas quickly and identify the most impactful milestones given existing deadlines and constraints
+The Good/Better/Best method allows teams to break down ideas quickly and identify the most impactful milestones given existing deadlines and constraints.
+
 ## Good
 
 When breaking work down it is critical to know what the least you can do is, genuinely and still call the delivery a success. This is often referred to as the minimum viable product or "MVP". The question the team should answer is:
 
-> "What is the literal least we can do?"
+> What is the literal least we can do?
 
 This is where deadlines, expectations, and other constraints should be surfaced so all team members and stakeholders are working with the same finish line in mind.
 
@@ -36,7 +38,7 @@ Some examples of things that may surface in a Good session:
 
 There will likely be a wide chasm between "what is the literal least we can do?" and "what would we do if we had unlimited time and money?" - or at least, there should be. Naturally, the question that helps bridge those is:
 
-> "What are the 'low hanging fruit' that will wow users?"
+> What are the 'low hanging fruit' that will wow users?
 
 This is the perfect time for teams to break off, research or "spike" various ideas and tools, and return to the group with an analysis of what items may be easy enough to implement without risking timelines.
 
@@ -65,7 +67,7 @@ Try to "yes and" as much as possible - **there are no wrong ideas in this phase.
 
 The team should leave this session having thoroughly explored:
 
-> "What would we build with unlimited time and money?"
+> What would we build with unlimited time and money?
 
 Some questions to help kick off a Best session:
 - "What would we build if we had unlimited time/money/energy?"

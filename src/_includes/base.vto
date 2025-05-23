@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html class="bg-base-200" lang="en">
   <head>
     {{ include "meta.vto" }}
   </head>
-  <body class="min-h-screen bg-base-200 text-base-content font-normal flex flex-col">
+  <body class="min-h-screen text-base-content font-normal flex flex-col max-w-[1200px] mx-auto">
     {{ include "header.html" }}
-    <main class="flex-grow mx-auto px-4 sm:px-8 md:px-16 lg:px-32 max-w-[1200px]">
+    <main class="flex-grow mx-auto px-4 sm:px-8 md:px-16 lg:px-32">
       {{ content }}
     </main>
     {{ include "footer.vto" }}

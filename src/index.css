@@ -33,6 +33,20 @@
   --border: 1px;
   --depth: 0;
   --noise: 0;
+
+  /* ---------- PAGEFIND ---------- */
+  --pagefind-ui-scale: 1;
+  --pagefind-ui-primary: var(--color-primary);
+  --pagefind-ui-text: var(--color-base-content);
+  --pagefind-ui-background: transparent;
+  --pagefind-ui-border: var(--color-base-300);
+  /* --pagefind-ui-tag: <color> */
+  --pagefind-ui-border-width: 4px;
+  /* --pagefind-ui-border: var(--color-primary); */
+  --pagefind-ui-border-radius: var(--radius-field);
+  /* --pagefind-ui-image-border-radius: 8px; */
+  /* --pagefind-ui-image-box-ratio: 3 / 2; */
+  /* --pagefind-ui-font: var(--font-family-heading); */
 }
 
 /* Dark mode colors */
@@ -48,17 +62,23 @@
   }
 }
 
-:root {
-  /* ---------- PAGEFIND ---------- */
-  --pagefind-ui-scale: 1;
-  --pagefind-ui-primary: var(--primary);
-  --pagefind-ui-text: var(--text);
-  --pagefind-ui-background: transparent;
-  --pagefind-ui-border: var(--divider);
-  /* --pagefind-ui-tag: <color> */
-  --pagefind-ui-border-width: 2px;
-  --pagefind-ui-border-radius: var(--roundness);
-  /* --pagefind-ui-image-border-radius: 8px; */
-  /* --pagefind-ui-image-box-ratio: 3 / 2; */
-  --pagefind-ui-font: var(--font-family-heading);
+.pagefind-ui__search-input {
+  @apply !border-primary focus:outline-none;
+}
+
+/* ---------- PROSE ---------- */
+
+.prose :is(h1, h2, h3, h4, h5, h6) a {
+  @apply no-underline font-black;
+}
+
+.prose :is(h1, h2, h3, h4, h5, h6):hover::before {
+  @apply opacity-50 inline-block whitespace-pre;
+  content: "#  ";
+  text-decoration: none;
+  margin-left: -42.5px;
+}
+
+.prose blockquote {
+  @apply border-l-4 border-success pl-4 ml-0 italic font-black text-2xl text-success;
 }
