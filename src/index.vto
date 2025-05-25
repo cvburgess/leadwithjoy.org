@@ -18,21 +18,6 @@ ogImage: joy
   as they learn to lead in an authentic, sustainable way.
 </p>
 
-<h2 class="title">Categories</h2>
-<p class="subtitle">The same basic ideas, but different shapes and sizes.</p>
-
-<div class="flex flex-wrap gap-8 justify-center items-center">
-  {{ comp.card({ title: "Crash Courses", icon: "crash-course", url: "/tags/crash-course/" }) }}
-  {{ comp.card({ title: "Playbooks", icon: "playbook", url: "/tags/playbook/" }) }}
-  <div class="basis-full h-0 sm:hidden lg:block xl:hidden"></div>
-  {{ comp.card({ title: "Guides", icon: "guide", url: "/tags/guide/" }) }}
-  {{ comp.card({ title: "Deep Dives", icon: "deep-dive", url: "/tags/deep-dive/" }) }}
-</div>
-
-<h2 class="title">Search All Posts</h2>
-<p class="subtitle">For the people who know what they are looking for. &nbsp;Must be nice.</p>
-<div id="search"></div>
-
 <h2 class="title">Recent Additions</h2>
 <p class="subtitle">Some things I've been thinking on lately.</p>
 
@@ -40,6 +25,20 @@ ogImage: joy
   {{ for post of search.pages("type=crash-course|playbook|deep-dive|guide", "date=desc", 10) }}
     {{ comp.card({ title: post.title, description: post.description, icon: post.type, url: post.url }) }}
   {{ /for }}
+</div>
+
+<h2 class="title">Search All Posts</h2>
+<p class="subtitle">For the people who know what they are looking for. &nbsp;Must be nice.</p>
+<div id="search"></div>
+
+<h2 class="title">Categories</h2>
+<p class="subtitle">The same basic ideas, but different shapes and sizes.</p>
+
+<div class="flex flex-wrap gap-8 justify-center items-center">
+  {{ comp.tile({ title: "Crash Courses", icon: "crash-course", url: "/tags/crash-course/" }) }}
+  {{ comp.tile({ title: "Playbooks", icon: "playbook", url: "/tags/playbook/" }) }}
+  {{ comp.tile({ title: "Guides", icon: "guide", url: "/tags/guide/" }) }}
+  {{ comp.tile({ title: "Deep Dives", icon: "deep-dive", url: "/tags/deep-dive/" }) }}
 </div>
 
 <h2 class="title">Listen to the Podcast</h2>

@@ -17,7 +17,7 @@ export default function Preview(
       <div className="flex flex-col sm:flex-row w-full p-4 md:p-8">
         <div className="flex justify-center items-center mb-4 sm:mb-0">
           <a href={url}>
-            {image && <img src={image} alt={`Image for ${title}`} className="w-full sm:w-[200px] h-[120px] sm:h-[150px] object-cover rounded-lg" />}
+            {image && <img src={image} alt={`Image for ${title}`} className="w-full sm:w-[200px] h-[120px] sm:h-[150px] object-cover rounded-box" />}
           </a>
         </div>
         <div className="flex-1 sm:ml-8 md:ml-16 text-center sm:text-left">
