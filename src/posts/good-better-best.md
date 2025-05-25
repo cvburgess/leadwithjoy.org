@@ -4,7 +4,7 @@ tags:
   - process
   - tools
   - planning
-type: deep-dive
+type: playbook
 title: Good Better Best
 description: The Good Better Best method allows teams to break down ideas quickly and identify the most impactful milestones given existing deadlines and constraints
 date: 2025-05-17
@@ -12,9 +12,20 @@ episodeId:
 draft: false
 ---
 
-When given an epic, feature, task, or other ambiguous unit of work, it is often up to teams to break that work down and find the optimal path to delivery. 
+When given an epic, feature, task, or other ambiguous unit of work, it is often up to teams to break that work down and find the optimal path to delivery.
 
 The Good/Better/Best method allows teams to break down ideas quickly and identify the most impactful milestones given existing deadlines and constraints.
+
+> [!Summary]
+> 
+> - **Good ( MVP )**: "What is the literal least we can do?"
+> - **Better ( Stretch Goals )**: "What are the 'low hanging fruit' that will wow users?"
+> - **Best ( Dream Big )**: "What would we build with unlimited time and money?"
+> ---
+> - Invite engineers, designers, product, and any other key decision makers
+> - Schedule two sessions, 60m + 30m
+>   - **Session 1**: Best + Good
+>   - **Session 2**: Better ( after allowing time for research )
 
 ## Good
 
@@ -104,14 +115,14 @@ It is best to break this meeting into two sessions: one for Best + Good, and a f
 **Session 1: Best + Good**
 
 - ⏰ ~60m (30m + 30m)
-- 👩‍💻 all stakeholders, especially product (or anyone with scoping authority)
+- 👩‍💻 All stakeholders, especially product (or anyone with scoping authority)
 - 🔑 "What is the literal least we can do?"
 - 🔑 "What would we build with unlimited time and money?"
   
 **Session 2: Better**
 
 - ⏰ ~30m, at least 1h after the first session
-- 👩‍💻 design, engineering, and anyone contributing to the work effort
+- 👩‍💻 Design, engineering, and anyone contributing to the work effort
 - 🔑 "What are the 'low hanging fruit' that will wow users?"
 
 ### Start with "Best"

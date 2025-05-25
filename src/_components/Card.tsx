@@ -35,7 +35,7 @@ export default function Card(
         <div className="flex-1 sm:ml-8 md:ml-16 text-center sm:text-left">
           <a
             href={url}
-            className="text-2xl font-bold line-clamp-2"
+            className="text-primary text-2xl font-black line-clamp-2"
             target={isExternal ? "_blank" : undefined}
             rel={isExternal ? "noopener noreferrer" : undefined}
           >

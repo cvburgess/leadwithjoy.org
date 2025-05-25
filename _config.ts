@@ -9,6 +9,8 @@ import toc from "https://deno.land/x/lume_markdown_plugins/toc.ts";
 import anchor from "npm:markdown-it-anchor";
 import { container } from "npm:@mdit/plugin-container";
 
+import mdItObsidianCallouts from 'markdown-it-obsidian-callouts';
+
 import { processPreviews } from "./src/utils/processPreviews.ts";
 
 const BASE_URL = "https://leadwithjoy.org";
@@ -51,6 +53,8 @@ site.hooks.addMarkdownItPlugin(anchor, {
   level: 2,
   permalink: anchor.permalink.headerLink(),
 });
+
+site.hooks.addMarkdownItPlugin(mdItObsidianCallouts);
 
 site.hooks.addMarkdownItPlugin(container, {
   name: "note",

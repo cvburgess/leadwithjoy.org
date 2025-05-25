@@ -66,27 +66,57 @@
   @apply !border-primary focus:outline-none;
 }
 
+/* ---------- TAILWIND ---------- */
+
+.link-hover {
+  @apply hover:underline-offset-[0.3rem] hover:decoration-4;
+}
+
 /* ---------- PROSE ---------- */
 
 .prose :is(h1, h2, h3, h4, h5, h6) a {
   @apply no-underline font-black;
 }
-
 .prose :is(h1, h2, h3, h4, h5, h6):hover::before {
-  @apply opacity-50 inline-block whitespace-pre;
+  @apply opacity-50 inline-block whitespace-pre no-underline;
   content: "#  ";
-  text-decoration: none;
-  margin-left: -42.5px;
 }
-
+.prose h2:hover::before {
+  @apply  -ml-6.5;
+}
+.prose h3:hover::before {
+  @apply  -ml-5.5;
+}
+.prose :is(h4, h5, h6):hover::before {
+  @apply  -ml-4.5;
+}
 .prose blockquote {
-  @apply border-l-4 border-success pl-4 ml-0 italic font-black text-2xl text-success;
+  @apply border-l-4 border-success pl-4 ml-0 italic font-black text-2xl text-success text-pretty;
 }
-
 .prose li::marker {
   @apply text-primary font-bold;
 }
-
 .prose ul li::marker {
   @apply text-xl;
+}
+
+/* ---------- CALLOUTS ---------- */
+
+.callout {
+  @apply border-l-4 border-info pl-4 ml-0 mt-10 text-info-content;
+}
+.callout li::marker {
+  @apply text-info;
+}
+.callout strong {
+  @apply text-info-content;
+}
+.callout hr {
+  @apply my-6
+}
+.callout .callout-title {
+  @apply flex items-center gap-3 text-info font-bold text-lg ml-1;
+}
+.callout .callout-title svg {
+  @apply size-4;
 }

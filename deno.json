@@ -8,7 +8,8 @@
     "lume/": "https://deno.land/x/lume@v3.0.1/",
     "lume/jsx-runtime": "https://deno.land/x/ssx@v0.1.9/jsx-runtime.ts",
     "daisyui": "npm:daisyui@^5.0.27",
-    "@tailwindcss/typography": "npm:@tailwindcss/typography@^0.5.16"
+    "@tailwindcss/typography": "npm:@tailwindcss/typography@^0.5.16",
+    "markdown-it-obsidian-callouts": "npm:markdown-it-obsidian-callouts@^0.3.2"
   },
   "compilerOptions": {
     "jsx": "react-jsx",
