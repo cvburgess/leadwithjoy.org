@@ -137,7 +137,7 @@ When let everyone share their ideas they feel seen, heard, and are often far mor
 - **Do** use a whiteboard, kanban board, or other collaborative tool
 - **Do not** bring in deadlines or other constraints yet, the sky is the limit
 
-### Ground the team with "Good"
+### Ground with "Good"
 
 Once all the ideas, large and small, are out in the open, the team can take a step back and discuss the constraints the team will face while building.
 

@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   let currentActive = null;
+  const activeClasses = ["bg-primary", "!text-base-200", "!font-bold", "rounded-field"];
 
   const observer = new IntersectionObserver((entries) => {
     const visibleEntries = entries.filter((entry) => entry.isIntersecting);
@@ -12,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
           `nav li a[href="#${currentActive}"]`,
         );
         if (activeLink) {
-          activeLink.classList.remove("text-primary", "font-medium");
+          activeLink.classList.remove(...activeClasses);
         }
       }
 
@@ -20,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const id = firstVisible.target.getAttribute("id");
       const link = document.querySelector(`nav li a[href="#${id}"]`);
       if (link) {
-        link.classList.add("text-primary", "font-medium");
+        link.classList.add(...activeClasses);
         currentActive = id;
       }
     }
