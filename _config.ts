@@ -65,6 +65,7 @@ site.hooks.addMarkdownItPlugin(container, {
 // --------- PUBLIC FILES ---------- //
 
 site.add([".css"]);
+site.add("scripts");  // Add JavaScript files
 site.add([".jpg", ".jpeg", ".gif", ".png", ".webp", ".svg", ".ico"]);
 
 // --------- CUSTOM FILE LOADERS ---------- //
