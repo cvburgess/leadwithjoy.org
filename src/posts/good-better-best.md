@@ -101,15 +101,18 @@ When running a team through a Good Better Best exercise, the order can have a se
 
 It is best to break this meeting into two sessions: one for Best + Good, and a follow up session for Better once everyone has had an opportunity to do some research.
 
-- **Session 1: Best + Good**
-	- ⏰ ~60m (30m + 30m)
-	- 👩‍💻 all stakeholders, especially product (or anyone with scoping authority)
-	- 🔑 "What is the literal least we can do?"
-	- 🔑 "What would we build with unlimited time and money?"
-- **Session 2: Better**
-	- ⏰ ~30m, at least 1h after the first session
-	- 👩‍💻 design, engineering, and anyone contributing to the work effort
-	- 🔑 "What are the 'low hanging fruit' that will wow users?"
+**Session 1: Best + Good**
+
+- ⏰ ~60m (30m + 30m)
+- 👩‍💻 all stakeholders, especially product (or anyone with scoping authority)
+- 🔑 "What is the literal least we can do?"
+- 🔑 "What would we build with unlimited time and money?"
+  
+**Session 2: Better**
+
+- ⏰ ~30m, at least 1h after the first session
+- 👩‍💻 design, engineering, and anyone contributing to the work effort
+- 🔑 "What are the 'low hanging fruit' that will wow users?"
 
 ### Start with "Best"
 
