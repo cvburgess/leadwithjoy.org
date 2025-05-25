@@ -66,6 +66,13 @@
   @apply !border-primary focus:outline-none;
 }
 
+.title {
+  @apply mt-24 mb-4 text-center text-4xl font-black;
+}
+.subtitle {
+  @apply mb-12 text-center text-lg font-light text-base-content/80 italic font-serif;
+}
+
 /* ---------- TAILWIND ---------- */
 
 .link-hover {

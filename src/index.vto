@@ -2,33 +2,26 @@
 layout: base.vto
 ogImage: joy
 ---
-<h1 class="text-center text-3xl font-bold my-16">Lead with Joy</h1>
-<p class="text-center text-subtext font-normal text-lg italic my-2 mb-8">Tools and insights to help engineering leaders change how we work, together.</p>
+<h2 class="title">Lead with Joy</h2>
+<p class="subtitle">Tools and insights to help engineering leaders change how we work, together.</p>
 <img class="my-8 w-full object-contain h-[230px]" src="/img/joy.png" alt="Lead with Joy logo" />
 <p class="text-center text-balance">
   There isn't a clear point in time when we can declare we are "officially grown up", and the same is true for leadership.
-  <br/>
+</p>
+<p class="text-center text-balance">
   No title or tenure makes you a leader.
-  <span class="font-bold text-accent-green mx-1">You're a leader when people start to lean on you</span> - ready or not.
-  <br/>
-  This project is for those in (or aspiring to be in) that position as they learn to lead in an authentic, sustainable way.
+  <strong>You're a leader when people start to lean on you</strong> - ready or not.
+</p>
+<p class="text-center text-balance">
+  This project is for those in (or aspiring to be in) that position 
+  <br />
+  as they learn to lead in an authentic, sustainable way.
 </p>
 
-<h1 class="text-center text-3xl font-bold my-16">Listen to the Podcast</h1>
-<p class="text-center text-subtext font-normal text-lg italic my-2 mb-8">Prefer to soak up tidbits while commuting or walking the dog? <br/> Grab the pod and live your best life.</p>
-<div class="flex flex-wrap justify-center items-center my-16">
-  <a href="{{ metadata.links.podcast.apple }}" class="hover:no-underline">
-    <span class="badge badge-outline badge-lg badge-primary px-8 py-4 my-8 mr-4 uppercase">Apple Podcasts</span></a>
-  <a href="{{ metadata.links.podcast.spotify }}" class="hover:no-underline">
-    <span class="badge badge-outline badge-lg badge-success px-8 py-4 my-8 mr-4 uppercase">Spotify</span></a>
-  <a href="{{ metadata.links.podcast.rss }}" class="hover:no-underline">
-    <span class="badge badge-outline badge-lg badge-info px-8 py-4 my-8 mr-4 uppercase">Web Player &nbsp;/&nbsp; RSS Feed</span></a>
-</div>
+<h2 class="title">Categories</h2>
+<p class="subtitle">The same basic ideas, but different shapes and sizes.</p>
 
-<h1 class="text-center text-3xl font-bold my-16">Categories</h1>
-<p class="text-center text-subtext font-normal text-lg italic my-2 mb-8">The same basic ideas, but different shapes and sizes.</p>
-
-<div class="flex flex-wrap justify-center items-center">
+<div class="flex flex-wrap gap-8 justify-center items-center">
   {{ comp.card({ title: "Crash Courses", icon: "crash-course", url: "/tags/crash-course/" }) }}
   {{ comp.card({ title: "Playbooks", icon: "playbook", url: "/tags/playbook/" }) }}
   <div class="basis-full h-0 sm:hidden lg:block xl:hidden"></div>
@@ -36,21 +29,32 @@ ogImage: joy
   {{ comp.card({ title: "Deep Dives", icon: "deep-dive", url: "/tags/deep-dive/" }) }}
 </div>
 
-<h1 class="text-center text-3xl font-bold my-16">Search All Posts</h1>
-<p class="text-center text-subtext font-normal text-lg italic my-2 mb-8">For the people who know what they are looking for. &nbsp;Must be nice.</p>
+<h2 class="title">Search All Posts</h2>
+<p class="subtitle">For the people who know what they are looking for. &nbsp;Must be nice.</p>
 <div id="search"></div>
 
-<h1 class="text-center text-3xl font-bold my-16">Recent Additions</h1>
-<p class="text-center text-subtext font-normal text-lg italic my-2 mb-8">Some things I've been thinking on lately.</p>
+<h2 class="title">Recent Additions</h2>
+<p class="subtitle">Some things I've been thinking on lately.</p>
 
-<div class="flex flex-col">
+<div class="flex flex-col gap-8">
   {{ for post of search.pages("type=crash-course|playbook|deep-dive|guide", "date=desc", 10) }}
     {{ comp.card({ title: post.title, description: post.description, icon: post.type, url: post.url }) }}
   {{ /for }}
 </div>
 
-<p class="my-16 text-center">
-  <span class="font-bold text-accent-green mx-1">Lead with Joy</span> is a love letter to all the wonderful people
+<h2 class="title">Listen to the Podcast</h2>
+<p class="subtitle">Prefer to soak up tidbits while commuting or walking the dog? <br/> Grab the pod and live your best life.</p>
+<div class="flex flex-col gap-8 md:flex-row flex-wrap gap-6 justify-center items-center my-16">
+  <a href="{{ metadata.links.podcast.apple }}" class="hover:no-underline w-[80%] md:w-auto">
+    <span class="badge badge-outline outline-3 badge-lg badge-accent py-6 px-8 font-black uppercase w-full md:w-auto">Apple Podcasts</span></a>
+  <a href="{{ metadata.links.podcast.spotify }}" class="hover:no-underline w-[80%] md:w-auto">
+    <span class="badge badge-outline outline-3 badge-lg badge-success py-6 px-8 font-black uppercase w-full md:w-auto">Spotify</span></a>
+  <a href="{{ metadata.links.podcast.rss }}" class="hover:no-underline w-[80%] md:w-auto">
+    <span class="badge badge-outline outline-3 badge-lg badge-info py-6 px-8 font-black uppercase w-full md:w-auto">Web Player &nbsp;/&nbsp; RSS Feed</span></a>
+</div>
+
+<p class="mt-24 mb-12 text-center italic text-base-content/60 font-serif">
+  <span class="font-bold text-primary mr-0.5">Lead with Joy</span> is a love letter to all the wonderful people
   <br/>I've gotten to coach, manage, and mentor over the years.
   <br/>
   I hope it keeps you company on your many adventures ahead.

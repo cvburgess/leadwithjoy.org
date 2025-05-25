@@ -12,7 +12,7 @@ export default function Card(
   const isExternal = url.startsWith("http");
   return (
     <div
-      className="card bg-base-100 shadow-lg hover:shadow-xl transition-all duration-200 cursor-pointer rounded-box m-4 p-8 md:p-16"
+      className="card bg-base-100 shadow-lg hover:shadow-xl transition-all duration-200 cursor-pointer rounded-box p-12 md:p-16"
       data-href={url}
     >
       <div className="flex flex-col sm:flex-row w-full h-full">

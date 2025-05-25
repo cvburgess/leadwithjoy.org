@@ -2,7 +2,7 @@
 layout: base.vto
 ---
 
-<div class="mt-16 mb-28 flex flex-col gap-16">
+<div class="mt-24 mb-28 flex flex-col gap-16">
   <h1 class="text-center text-4xl font-black">{{ title }}</h1>
   <div class="divider">
     <img class="h-20 w-20 mx-16" src="/img/icons/{{ type }}.svg" aria-hidden="true" alt="{{ type }} icon"/>
@@ -24,7 +24,7 @@ layout: base.vto
   {{ /if }}
 
   {{ if toc && toc.length }}
-    <nav class="sticky top-16 self-start w-1/4 max-w-56 mr-12 hidden sm:flex">
+    <nav class="sticky top-16 self-start w-1/4 max-w-56 mr-12 hidden sm:flex print:hidden">
       <ol class="list-none p-0 m-0">
         {{ for item of toc }}
           <li class="">
@@ -44,7 +44,7 @@ layout: base.vto
     </nav>
   {{ /if }}
 
-  <div class="flex-1 prose prose-a:text-primary prose-headings:font-black prose-headings:text-primary prose-strong:font-bold">
+  <div class="flex-1 prose print:prose-sm prose-a:text-primary prose-headings:font-black prose-headings:text-primary prose-strong:font-bold">
     {{ content }}
   </div>
 
@@ -55,12 +55,12 @@ layout: base.vto
 {{ set relatedPosts = search.pages(searchTerm, "date", 3) }}
 
 {{ if relatedPosts && relatedPosts.length }}
-  <div class="divider mt-24 mb-8">
+  <div class="divider mt-24 mb-8 print:hidden">
     <h2 class="text-primary text-center text-3xl font-black mx-16">Dive a little deeper</h2>
   </div>
-  <p class="text-center text-subtext font-normal text-lg italic my-2 mb-8">Related posts, videos, and podcast episodes</p>
+  <p class="subtitle print:hidden">Related posts, videos, and podcast episodes</p>
 
-  <div class="flex flex-col">
+  <div class="flex flex-col gap-8 print:hidden">
     {{ for post of relatedPosts }}
       {{ comp.card({ title: post.title, description: post.description, icon: post.type, url: post.url }) }}
     {{ /for }}
@@ -71,10 +71,6 @@ layout: base.vto
   <a class="mx-4 text-lg font-bold link-hover text-primary" href="/">← Go back home</a>
   <span class="mx-4 text-lg hidden sm:inline"> • </span>
   <a class="mx-4 text-lg font-bold link-hover text-primary" href="{{ metadata.repoUrl }}/blob/main/src{{ inputPath }}">Suggest an edit on GitHub</a>
-</div>
-
-<div class="print:flex print:justify-center print:items-center hidden my-4">
-  <p>Charles Burgess © 2025</p>
 </div>
 
 <script src="/scripts/toc.js"></script>
