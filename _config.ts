@@ -7,7 +7,6 @@ import pagefind from "lume/plugins/pagefind.ts";
 import toc from "https://deno.land/x/lume_markdown_plugins/toc.ts";
 
 import anchor from "npm:markdown-it-anchor";
-import { container } from "npm:@mdit/plugin-container";
 
 import mdItObsidianCallouts from 'markdown-it-obsidian-callouts';
 
@@ -55,12 +54,6 @@ site.hooks.addMarkdownItPlugin(anchor, {
 });
 
 site.hooks.addMarkdownItPlugin(mdItObsidianCallouts);
-
-site.hooks.addMarkdownItPlugin(container, {
-  name: "note",
-  openRender: () =>
-    `<div class="callout"><p class="callout-title">HEADS UP!</p>`,
-});
 
 // --------- PUBLIC FILES ---------- //
 

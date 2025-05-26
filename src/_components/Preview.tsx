@@ -11,25 +11,25 @@ export default function Preview(
 ) {
   return (
     <div
-      className="card bg-base-200 dark:bg-base-300 shadow-md hover:shadow-lg transition-all duration-200 cursor-pointer rounded-box my-8 md:my-16 text-sm"
+      className="card sm:card-side bg-base-100 shadow-md hover:shadow-lg transition-all duration-200 w-full"
       data-href={url}
     >
-      <div className="flex flex-col sm:flex-row w-full p-4 md:p-8">
-        <div className="flex justify-center items-center mb-4 sm:mb-0">
-          <a href={url}>
-            {image && <img src={image} alt={`Image for ${title}`} className="w-full sm:w-[200px] h-[120px] sm:h-[150px] object-cover rounded-box" />}
-          </a>
-        </div>
-        <div className="flex-1 sm:ml-8 md:ml-16 text-center sm:text-left">
-          <a href={url} className="card-title text-lg md:text-xl font-bold line-clamp-2">
-            {title}
-          </a>
-          {description && (
-            <p className="line-clamp-2 md:line-clamp-3 my-2">{description}</p>
-          )}
-          <p className="mt-2 text-primary font-semibold">{hostname}</p>
-        </div>
+      {image && (
+        <figure className="!max-w-10 w-10">
+          <img width="48" className="!max-w-10 w-10" src={image} alt={`Image for ${title}`} />
+        </figure>
+      )}
+      <div className="card-body p-4">
+        <a href={url} className="card-title text-xs font-bold line-clamp-1 p-0 m-0 link-hover">
+          {title}
+        </a>
+        {description && (
+          <p className="line-clamp-1 text-xs text-base-content/80 my-0 p-0">{description}</p>
+        )}
+        <a href={url} className="text-primary text-center sm:text-left text-xs font-semibold line-clamp-1 p-0 m-0 link-hover">
+          <p>{hostname}</p>
+        </a>
       </div>
-    </div>
+    </div >
   );
 }

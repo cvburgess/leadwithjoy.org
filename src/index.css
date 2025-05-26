@@ -106,6 +106,10 @@
 .prose ul li::marker {
   @apply text-xl;
 }
+.prose img,
+.prose figure {
+  @apply m-0;
+}
 
 /* ---------- CALLOUTS ---------- */
 

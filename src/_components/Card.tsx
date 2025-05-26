@@ -27,7 +27,7 @@ export default function Card(
               <img
                 src={`/img/icons/${icon}.svg`}
                 alt={icon}
-                className="w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] dark:invert-[0.85]"
+                className="w-[80px] h-[80px] sm:w-[100px] sm:h-[100px]"
               />
             )}
           </a>
