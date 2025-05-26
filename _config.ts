@@ -13,7 +13,6 @@ import mdItObsidianCallouts from 'markdown-it-obsidian-callouts';
 import { processPreviews } from "./src/utils/processPreviews.ts";
 
 const BASE_URL = "https://leadwithjoy.org";
-const PRIMARY_COLOR = "#ffbc51";
 
 const site = lume({
   location: new URL(BASE_URL),
