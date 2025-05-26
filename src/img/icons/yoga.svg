@@ -13,8 +13,8 @@
             <path d="M763,320.584491 C776.625748,326.234821 791.37478,328.429546 806,326.983091" id="Path" stroke-width="40" stroke-linecap="round" stroke-linejoin="round"></path>
             <path d="M606,267 C614.766529,242.33106 640.092059,200.1574 681,206.67581" id="Path" stroke-width="40" stroke-linecap="round" stroke-linejoin="round"></path>
             <path d="M779,170 C788.500139,154.976964 803.706279,144.363885 821.197386,140.548463 C838.688494,136.73304 856.995591,140.035709 872,149.713446" id="Path" stroke-width="40" stroke-linecap="round" stroke-linejoin="round"></path>
-            <circle id="Oval" stroke-width="10" fill="--primary" fill-rule="nonzero" cx="696" cy="268" r="24"></circle>
-            <circle id="Oval" stroke-width="10" fill="--primary" fill-rule="nonzero" cx="830" cy="198" r="24"></circle>
+            <circle id="Oval" stroke-width="10" fill="var(--color-primary)" fill-rule="nonzero" cx="696" cy="268" r="24"></circle>
+            <circle id="Oval" stroke-width="10" fill="var(--color-primary)" fill-rule="nonzero" cx="830" cy="198" r="24"></circle>
         </g>
     </g>
 </svg>

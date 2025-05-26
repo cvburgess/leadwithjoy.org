@@ -67,7 +67,7 @@
 }
 
 .title {
-  @apply mt-24 mb-4 text-center text-4xl font-black;
+  @apply mt-32 mb-4 text-center text-4xl font-black;
 }
 .subtitle {
   @apply mb-12 text-center text-lg font-light text-base-content/80 italic font-serif;
@@ -77,6 +77,10 @@
 
 .link-hover {
   @apply hover:underline-offset-[0.3rem] hover:decoration-4;
+}
+
+.divider svg {
+  @apply size-40 mx-8;
 }
 
 /* ---------- PROSE ---------- */
