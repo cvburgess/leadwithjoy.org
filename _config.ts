@@ -61,23 +61,7 @@ site.add([".css"]);
 site.add("scripts");  // Add JavaScript files
 site.add([".jpg", ".jpeg", ".gif", ".png", ".webp", ".svg", ".ico"]);
 
-// --------- CUSTOM FILE LOADERS ---------- //
-
-// Replace css-style variables with their values in SVGs
-// When the site color changes, the SVGs update automatically
-//
-// TODO: Replace with Tailwind CSS - https://tailwindcss.com/docs/fill
-site.process([".svg"], (pages) => {
-  for (const page of pages) {
-    const decoder = new TextDecoder();
-    const content = decoder.decode(page.content as Uint8Array);
-    page.content = content.replace(/--primary/gi, PRIMARY_COLOR);
-  }
-});
-
 // --------- FILTERS ---------- //
-
-site.filter("log", (value) => console.log(value));
 
 export const makeAbsoluteUrl = (path: string) => `${BASE_URL}${path}`;
 
