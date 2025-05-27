@@ -8,7 +8,6 @@ title: The Retro Playbook
 description: How to keep retros feeling fresh and hand-crafted for the moment your team is reflecting upon
 date: 2023-10-04
 ---
-
 ## Introduction
 
 Retros (short for retrospectives) are a tool used to reflect on sprints or
@@ -17,13 +16,11 @@ your team feeling empowered and hopeful for the next one... or push them further
 into collective misery. This playbook is designed to help you tweak retro until
 it is a consistent and effective tool to move your team forward.
 
-::: note
-
-This playbook assumes you already know the basics of running a retro, but you
-can always check out [The Retro Guide](/) for more in-depth information about
+> [!NOTE]
+> 
+> This playbook assumes you already know the basics of running a retro, but you
+can always check out the [Retro Guide](/) for more in-depth information about
 the building blocks and philosophy of an awesome retro.
-
-:::
 
 ## When the team is new and still figuring things out
 
@@ -114,15 +111,12 @@ to "just be positive".
 That said, being mindful of emotional "dumping" and ensuring that the forum
 stays fairly blameless is also critical for the team's health and morale.
 
-::: note
-
-Be mindful of time with this format! If you spend all your time being _Mad_ and
-_Sad_ you will have to skip or rush through the _Glad_ portion of the retro -
-a.k.a. the part that makes everyone feel good and find the silver lining. I like
-to allot 25% / 25% / 40% of the retro time to each category, respectively; the
-last 10% is usually spent starting the meeting and winding it down.
-
-:::
+> [!NOTE]
+> Be mindful of time with this format! If you spend all your time being _Mad_ and
+> _Sad_ you will have to skip or rush through the _Glad_ portion of the retro -
+> a.k.a. the part that makes everyone feel good and find the silver lining. I like
+> to allot 25% / 25% / 40% of the retro time to each category, respectively; the
+> last 10% is usually spent starting the meeting and winding it down.
 
 ## When the team tackled something new and rose to the occasion
 

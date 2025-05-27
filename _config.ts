@@ -2,19 +2,23 @@ import lume from "lume/mod.ts";
 import { Page } from "lume/core/file.ts";
 
 import jsx from "lume/plugins/jsx.ts";
+import tailwindcss from "lume/plugins/tailwindcss.ts";
 import pagefind from "lume/plugins/pagefind.ts";
 import toc from "https://deno.land/x/lume_markdown_plugins/toc.ts";
 
 import anchor from "npm:markdown-it-anchor";
-import { container } from "npm:@mdit/plugin-container";
+
+import mdItObsidianCallouts from 'markdown-it-obsidian-callouts';
 
 import { processPreviews } from "./src/utils/processPreviews.ts";
 
 const BASE_URL = "https://leadwithjoy.org";
-const PRIMARY_COLOR = "#ffbc51";
 
 const site = lume({
   location: new URL(BASE_URL),
+  server: {
+    debugBar: false, // disable the debug bar
+  },
   src: "./src",
   watcher: {
     ignore: ["/_data/ogCache.json"],
@@ -22,6 +26,7 @@ const site = lume({
 });
 
 site.use(jsx());
+site.use(tailwindcss());
 site.use(pagefind());
 site.use(toc());
 
@@ -50,35 +55,15 @@ site.hooks.addMarkdownItPlugin(anchor, {
   permalink: anchor.permalink.headerLink(),
 });
 
-site.hooks.addMarkdownItPlugin(container, {
-  name: "note",
-  openRender: () =>
-    `<div class="callout"><p class="callout-title">HEADS UP!</p>`,
-});
+site.hooks.addMarkdownItPlugin(mdItObsidianCallouts);
 
 // --------- PUBLIC FILES ---------- //
 
 site.add([".css"]);
+site.add("scripts");  // Add JavaScript files
 site.add([".jpg", ".jpeg", ".gif", ".png", ".webp", ".svg", ".ico"]);
 
-// --------- CUSTOM FILE LOADERS ---------- //
-
-// Replace css-style variables with their values in SVGs
-// When the site color changes, the SVGs update automatically
-//
-// TODO: Replace with Tailwind CSS - https://tailwindcss.com/docs/fill
-site.process([".svg"], (pages) => {
-  for (const page of pages) {
-    const decoder = new TextDecoder();
-    const content = decoder.decode(page.content as Uint8Array);
-    console.log(content);
-    page.content = content.replace(/--primary/gi, PRIMARY_COLOR);
-  }
-});
-
 // --------- FILTERS ---------- //
-
-site.filter("log", (value) => console.log(value));
 
 export const makeAbsoluteUrl = (path: string) => `${BASE_URL}${path}`;
 
@@ -123,9 +108,8 @@ site.helper("button", (text, link, classes) => {
   const target = link?.startsWith("/")
     ? `target="_self"`
     : `target="_blank" rel="noopener"`;
-  return `<div class="button ${
-    classes || ""
-  }"><a href="${link}" ${target}><span>${text}</span></a></div>`;
+  return `<div class="button ${classes || ""
+    }"><a href="${link}" ${target}><span>${text}</span></a></div>`;
 }, { type: "tag" });
 
 export default site;
