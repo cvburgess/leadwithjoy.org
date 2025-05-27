@@ -1,0 +1,21 @@
+---
+layout: base.vto
+---
+<h1 class="title">Contributors</h1>
+<p class="subtitle">Want to get involved? Send an email or open a PR!</p>
+
+<div class="flex flex-wrap gap-8 justify-center items-center">
+  {{ comp.contributor({ name: "Charles Burgess", url: "https://cvburgess.com/" }) }}
+</div>
+
+<h1 class="title">Open Source</h1>
+<p class="subtitle">The projects that made this fun to build</p>
+
+<div class="flex flex-wrap gap-8 justify-center items-center">
+  {{ comp.openSource({ title: "Deno", url: "https://deno.land/" }) }}
+  {{ comp.openSource({ title: "Lume", url: "https://lume.land/" }) }}
+  {{ comp.openSource({ title: "Tailwind", url: "https://tailwindcss.com/" }) }}
+  {{ comp.openSource({ title: "daisyUI", url: "https://daisyui.com/" }) }}
+</div>
+
+<div class="w-full mb-32" id="search"></div>
