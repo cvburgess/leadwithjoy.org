@@ -79,6 +79,21 @@
 .subtitle {
   @apply mb-12 text-center text-lg font-light text-base-content/80 italic font-serif;
 }
+.preview {
+  max-height: 220px;
+}
+.preview img {
+  max-width: 33%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-box) 0 0 var(--radius-box);
+}
+.preview-details {
+  @apply flex flex-col flex-1 p-8 gap-4 text-xs;
+}
+.preview-description {
+  @apply font-light text-base-content/80 line-clamp-3;
+}
 
 /* ---------- TAILWIND ---------- */
 
