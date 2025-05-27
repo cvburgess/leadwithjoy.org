@@ -31,7 +31,6 @@
     "jsr:@std/toml@^1.0.3": "1.0.5",
     "jsr:@std/yaml@1.0.6": "1.0.6",
     "jsr:@std/yaml@^1.0.5": "1.0.6",
-    "npm:@mdit/plugin-container@*": "0.18.0_markdown-it@14.1.0",
     "npm:@tailwindcss/oxide@4.0.3": "4.0.3",
     "npm:@tailwindcss/oxide@4.1.6": "4.1.6",
     "npm:@tailwindcss/typography@*": "0.5.16_tailwindcss@4.1.7",
@@ -48,7 +47,6 @@
     "npm:markdown-it@14.1.0": "14.1.0",
     "npm:meriyah@6.0.5": "6.0.5",
     "npm:pagefind@1.3.0": "1.3.0",
-    "npm:preact-render-to-string@6.3.1": "6.3.1_preact@10.26.6",
     "npm:tailwindcss@4.1.6": "4.1.6"
   },
   "jsr": {
@@ -168,16 +166,6 @@
       "integrity": "sha512-wgm9Ehl2jpeqP3zw/7mo3kRHFp5MEDhqAdwy1fTGkHAwnkGOVsgpvQhL8B5n1qlb01jV3n/bI0ZfZp5lWA1k4w==",
       "dependencies": [
         "minipass"
-      ]
-    },
-    "@mdit/plugin-container@0.18.0_markdown-it@14.1.0": {
-      "integrity": "sha512-lNXFxhgPU44UmrElp5oRUGUYx4q0Nkta6BYDC7tYIzqk3BBJLccBMv2iI0Hejz+LFTRytyMUBAuxh/F+i1DsGw==",
-      "dependencies": [
-        "@types/markdown-it",
-        "markdown-it"
-      ],
-      "optionalPeers": [
-        "markdown-it"
       ]
     },
     "@napi-rs/wasm-runtime@0.2.10": {
@@ -524,19 +512,6 @@
         "cssesc",
         "util-deprecate"
       ]
-    },
-    "preact-render-to-string@6.3.1_preact@10.26.6": {
-      "integrity": "sha512-NQ28WrjLtWY6lKDlTxnFpKHZdpjfF+oE6V4tZ0rTrunHrtZp6Dm0oFrcJalt/5PNeqJz4j1DuZDS0Y6rCBoqDA==",
-      "dependencies": [
-        "preact",
-        "pretty-format"
-      ]
-    },
-    "preact@10.26.6": {
-      "integrity": "sha512-5SRRBinwpwkaD+OqlBDeITlRgvd8I8QlxHJw9AxSdMNV6O+LodN9nUyYGpSF7sadHjs6RzeFShMexC6DbtWr9g=="
-    },
-    "pretty-format@3.8.0": {
-      "integrity": "sha512-WuxUnVtlWL1OfZFQFuqvnvs6MiAGk9UNsBostyBOB0Is9wb5uRESevA6rnl/rkksXaGX3GzZhPup5d6Vp1nFew=="
     },
     "punycode.js@2.3.1": {
       "integrity": "sha512-uxFIHU0YlHYhDQtV4R9J6a52SLx28BCjT+4ieh7IGbgwVJWO+km431c4yRlREUAsAmt/uMjQUyQHNEPf0M39CA=="
