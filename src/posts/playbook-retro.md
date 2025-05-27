@@ -19,7 +19,7 @@ it is a consistent and effective tool to move your team forward.
 > [!NOTE]
 > 
 > This playbook assumes you already know the basics of running a retro, but you
-can always check out [The Retro Guide](/) for more in-depth information about
+can always check out the [Retro Guide](/) for more in-depth information about
 the building blocks and philosophy of an awesome retro.
 
 ## When the team is new and still figuring things out

@@ -20,7 +20,7 @@ the challenges your team is facing, today.
 
 > [!NOTE]
 > This playbook assumes you already know the basics of running a standup, but you
-> can always check out [The Standup Guide](/) for more in-depth information about
+> can always check out the [Standup Guide](/) for more in-depth information about
 > the building blocks and philosophy of an awesome standup.
 
 ## When you just want a status update

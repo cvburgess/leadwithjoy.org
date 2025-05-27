@@ -7,24 +7,24 @@
 :root {
   --color-base-100: #fff;
   --color-base-200: #fbfaf3;
-  --color-base-300: oklch(91% 0.018 78.24);
+  /* --color-base-300: oklch(91% 0.018 78.24); */
   --color-base-content: oklch(38.84% 0.0444 44.12);
   --color-primary: #ffbc51;
-  --color-primary-content: oklch(41% 0.112 45.904);
-  --color-secondary: oklch(27.12% 0.188 264.052);
-  --color-secondary-content: oklch(88% 0.059 254.128);
+  --color-primary-content: #D88A0E;
+  /* --color-secondary: oklch(27.12% 0.188 264.052); */
+  /* --color-secondary-content: oklch(88% 0.059 254.128); */
   --color-accent: #a673e6;
-  --color-accent-content: oklch(28% 0.141 291.089);
-  --color-neutral: oklch(38.84% 0.044 44.12);
-  --color-neutral-content: oklch(99% 0.01 78.24);
+  --color-accent-content: #56298E;
+  /* --color-neutral: oklch(38.84% 0.044 44.12); */
+  /* --color-neutral-content: oklch(99% 0.01 78.24); */
   --color-info: #55cee0;
-  --color-info-content: oklch(29% 0.066 243.157);
+  --color-info-content: #2478A8;
   --color-success: #94cc6f;
-  --color-success-content: oklch(39% 0.095 152.535);
-  --color-warning: oklch(82% 0.189 84.429);
-  --color-warning-content: oklch(41% 0.112 45.904);
+  --color-success-content: #5D884F;
+  /* --color-warning: #ffbc51; */
+  /* --color-warning-content: D88A0E; */
   --color-error: #ff7a5c;
-  --color-error-content: oklch(27% 0.105 12.094);
+  --color-error-content: #CC5129;
   --radius-selector: 2rem;
   --radius-field: 2rem;
   --radius-box: 2rem;
@@ -58,10 +58,14 @@
     /* --color-base-300: ??? */
     --color-base-content: #e5e0c1;
 
-    --background: #363530;
-    --background-contrast: #44423c;
-    --text: #e5e0c1;
-    --subtext: #b2af97;
+    --color-primary-content: #FBE1AB;
+    /* --color-secondary-content: #; */
+    --color-accent-content: #CBA7F6;
+    /* --color-neutral-content: #; */
+    --color-info-content: #A3E7F1;
+    --color-success-content: #BFE0A9;
+    /* --color-warning-content: #FBE1AB; */
+    --color-error-content: #FEB1A0;
   }
 }
 
@@ -104,6 +108,9 @@
 .prose :is(h4, h5, h6):hover::before {
   @apply  -ml-4.5;
 }
+.prose a {
+  @apply mx-0.5 font-bold hover:decoration-3;
+}
 .prose blockquote {
   @apply border-l-4 border-success pl-4 ml-0 italic font-black text-2xl text-success text-pretty;
 }
@@ -122,6 +129,9 @@
 
 .callout {
   @apply border-l-4 border-info pl-4 ml-0 mt-10 text-info-content;
+}
+.callout a {
+  @apply !text-info-content mx-0.5 font-bold;
 }
 .callout li::marker {
   @apply text-info;

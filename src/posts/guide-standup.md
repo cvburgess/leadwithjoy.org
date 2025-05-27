@@ -89,7 +89,7 @@ assumed or guessed correctly.
 
 ## How to tailor a standup to your team
 
-For a complete guide, check out [The Standup Playbook](/playbook-standup).
+For a complete guide, check out the [Standup Playbook](/playbook-standup).
 
 [preview](/posts/playbook-standup)
 
