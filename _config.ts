@@ -16,6 +16,9 @@ const BASE_URL = "https://leadwithjoy.org";
 
 const site = lume({
   location: new URL(BASE_URL),
+  server: {
+    debugBar: false, // disable the debug bar
+  },
   src: "./src",
   watcher: {
     ignore: ["/_data/ogCache.json"],

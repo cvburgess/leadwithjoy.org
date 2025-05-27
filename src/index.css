@@ -53,12 +53,15 @@
 @media (prefers-color-scheme: dark) {
   :root {
     color-scheme: dark light;
+    --color-base-100: #44423c;
+    --color-base-200: #363530;
+    /* --color-base-300: ??? */
+    --color-base-content: #e5e0c1;
+
     --background: #363530;
     --background-contrast: #44423c;
     --text: #e5e0c1;
     --subtext: #b2af97;
-    --divider: rgba(179, 175, 151, 0.25);
-    --shadow-hover: 0px 0px 20px 5px rgba(0, 0, 0, 0.2);
   }
 }
 
