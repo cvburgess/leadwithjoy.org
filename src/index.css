@@ -1,7 +1,5 @@
 @import "tailwindcss";
-
 @plugin "@tailwindcss/typography";
-
 @plugin "daisyui";
 
 :root {
@@ -69,9 +67,13 @@
   }
 }
 
+/* ---------- PAGEFIND ---------- */
+
 .pagefind-ui__search-input {
   @apply !border-primary focus:outline-none;
 }
+
+/* ---------- CUSTOM HELPERS ---------- */
 
 .title {
   @apply mt-32 mb-4 text-center text-4xl font-black;
@@ -79,6 +81,12 @@
 .subtitle {
   @apply mb-12 text-center text-lg font-light text-base-content/80 italic font-serif;
 }
+.svg-base svg * {
+  @apply !fill-base-100;
+}
+
+/* ---------- PREVIEW COMPONENT ---------- */
+
 .preview {
   max-height: 220px;
 }
@@ -100,12 +108,11 @@
 .link-hover {
   @apply hover:underline-offset-[0.3rem] hover:decoration-4;
 }
-
 .divider svg {
   @apply size-40 mx-8;
 }
 
-/* ---------- PROSE ---------- */
+/* ---------- TAILWIND PROSE ---------- */
 
 .prose :is(h1, h2, h3, h4, h5, h6) a {
   @apply no-underline font-black;
@@ -140,7 +147,7 @@
   @apply m-0;
 }
 
-/* ---------- CALLOUTS ---------- */
+/* ---------- OBSIDIAN CALLOUTS ---------- */
 
 .callout {
   @apply border-l-4 border-info pl-4 ml-0 mt-10 text-info-content;
