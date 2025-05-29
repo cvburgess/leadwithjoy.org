@@ -123,7 +123,7 @@
 .prose :is(h4, h5, h6):hover::before {
   @apply  -ml-4.5;
 }
-.prose a {
+.prose p a {
   @apply mx-0.5 font-bold hover:decoration-3;
 }
 .prose blockquote {
