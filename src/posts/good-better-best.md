@@ -16,7 +16,7 @@ When given an epic, feature, task, or other ambiguous unit of work, it is often 
 
 The Good/Better/Best method allows teams to break down ideas quickly and identify the most impactful milestones given existing deadlines and constraints.
 
-> [!Summary]
+> [!SUMMARY]
 > 
 > - **Good ( MVP )**: "What is the literal least we can do?"
 > - **Better ( Stretch Goals )**: "What are the 'low hanging fruit' that will wow users?"

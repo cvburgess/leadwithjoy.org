@@ -20,19 +20,16 @@ Standup is an agile technique that was designed to get everyone aligned -
 usually once a day. Some other common names for this include "daily", "sync",
 and "scrum".
 
-Most agile teams use one of two variations, "round robin" and "walk the board",
-to get a glimpse into the current status of the project.
-
-The reason the name "standup" has stuck is that many teams will literally stand
-for the duration of the meeting as a way to encourage everyone to keep it
-short - usually less than 15 minutes.
+> [!INFO]
+> 
+> The term "standup" is an on-the-nose reference to the fact that some teams would literally stand for the duration of the meeting as a way to encourage everyone to keep it short - usually less than 15 minutes.
 
 [preview](https://www.atlassian.com/team-playbook/plays/standups/)
 
 ## Why most folks don't love standup
 
-Standup as it is commonly practiced has become rote, repetitive, and thanks to
-modern project management tools... redundant.
+Standup as it is commonly practiced can be rote, repetitive, and thanks to
+modern project management tools... *redundant*.
 
 Be honest, _how easy is it for you to zone out while people rattle off their
 todo list when it largely doesn't impact you_? This is how most people feel in

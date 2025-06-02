@@ -16,7 +16,7 @@ your team feeling empowered and hopeful for the next one... or push them further
 into collective misery. This playbook is designed to help you tweak retro until
 it is a consistent and effective tool to move your team forward.
 
-> [!NOTE]
+> [!INFO]
 > 
 > This playbook assumes you already know the basics of running a retro, but you
 can always check out the [Retro Guide](/) for more in-depth information about
@@ -111,7 +111,7 @@ to "just be positive".
 That said, being mindful of emotional "dumping" and ensuring that the forum
 stays fairly blameless is also critical for the team's health and morale.
 
-> [!NOTE]
+> [!CAUTION]
 > Be mindful of time with this format! If you spend all your time being _Mad_ and
 > _Sad_ you will have to skip or rush through the _Glad_ portion of the retro -
 > a.k.a. the part that makes everyone feel good and find the silver lining. I like
