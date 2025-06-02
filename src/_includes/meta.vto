@@ -4,17 +4,17 @@
 <title>{{ `${title ? (title + " • ") : ""} Lead with Joy` }}</title>
 <meta
   property="og:title"
-  content="{{ title || (episode && episode.title) || metadata.title }}"
+  content="{{ title || episode?.title || metadata.title }}"
 />
 <meta
   name="description"
-  content="{{ description || (episode && episode.description) || metadata.description }}"
+  content="{{ description || episode?.description || metadata.description }}"
 />
 <meta
   property="og:description"
-  content="{{ description || (episode && episode.description) || metadata.description }}"
+  content="{{ description || episode?.description || metadata.description }}"
 />
-<meta property="og:image" content="{{ ogImage ? `/img/og/og-${ogImage}.jpg` : (type ? `/img/og/og-${type}.jpg` : '/img/og/og-default.jpg') }}"/>
+<meta property="og:image" content="{{ `/img/og/og-${ogImage || type || "default"}.jpg` }}"/>
 <meta property="og:image:type" content="image/jpg"/>
 <meta property="og:image:width" content="1024"/>
 <meta property="og:image:height" content="1024"/>
