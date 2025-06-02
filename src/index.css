@@ -148,7 +148,6 @@
 }
 
 /* ---------- OBSIDIAN CALLOUTS ---------- */
-
 .callout {
   @apply border-l-4 border-info pl-4 ml-0 mt-10 text-info-content;
 }
@@ -169,4 +168,13 @@
 }
 .callout .callout-title svg {
   @apply size-4;
+}
+ 
+.callout[data-callout="caution"],
+.callout[data-callout="caution"] * {
+  @apply border-error !text-error-content;
+}
+.callout[data-callout="tip"],
+.callout[data-callout="tip"] * {
+  @apply border-accent !text-accent-content;
 }
