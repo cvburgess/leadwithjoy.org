@@ -1,8 +1,10 @@
-# Lead with Joy
+<h1 align="center">Lead with Joy</h1>
 
 [![Header image](src/img/joy.png)](https://leadwithjoy.org/)
 
-Tools and insights to help engineering leaders change how we work, together.
+<p align="center">
+  Tools and insights to help engineering leaders change how we work, together.
+</p>
 
 ## Getting Started
 
@@ -33,4 +35,4 @@ Send an email or open a PR!
 
 Love the Lead with Joy project?
 
-Support it on GitHub Sponsors or Patreon.
+Support it on [GitHub Sponsors](https://github.com/cvburgess) or [Patreon](https://patreon.com/cvburgess).
