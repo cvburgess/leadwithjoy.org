@@ -1,9 +1,7 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <!-- Social Sharing -->
-<title>
-  {{ if title }}{{ title }} • {{ /if }}Lead with Joy
-</title>
+<title>{{ `${title ? (title + " • ") : ""} Lead with Joy` }}</title>
 <meta
   property="og:title"
   content="{{ title || (episode && episode.title) || metadata.title }}"
