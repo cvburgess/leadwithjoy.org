@@ -142,6 +142,9 @@
 .prose ul li::marker {
   @apply text-xl;
 }
+.prose ul li ul li {
+  @apply m-0;
+}
 .prose img,
 .prose figure {
   @apply m-0;
