@@ -3,10 +3,11 @@ layout: post.vto
 tags:
   - morale
   - retro
-type: playbook
-title: The Retro Playbook
+type: guide
+title: Picking a Retro Format
 description: How to keep retros feeling fresh and hand-crafted for the moment your team is reflecting upon
 date: 2023-10-04
+draft: false
 ---
 ## Introduction
 
@@ -16,11 +17,20 @@ your team feeling empowered and hopeful for the next one... or push them further
 into collective misery. This playbook is designed to help you tweak retro until
 it is a consistent and effective tool to move your team forward.
 
-> [!INFO]
+> [!Summary]
 > 
-> This playbook assumes you already know the basics of running a retro, but you
-can always check out the [Retro Guide](/) for more in-depth information about
-the building blocks and philosophy of an awesome retro.
+> - **What Went Well / Didn't Go Well**
+> 	- When the team is trying a new process
+> 	- When you don't have a better format in mind ( default )
+> - **Start Stop Continue**
+> 	- Teams that are new or are experiencing major change
+> - **4Ls ( Loved, Loathed, Longed for, Learned )**
+> 	- When discovery was the major theme of the project
+> - **Mad Sad Glad**
+> 	- When emotions are heightened or there are elephants in the room
+> - **Mario Kart**
+> 	- When you want to be sure you hear from ***everyone***
+> 	- When the things that keep slowing your team down are out of your control
 
 ## When the team is new and still figuring things out
 
