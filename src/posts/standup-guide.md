@@ -21,13 +21,15 @@ usually once a day. Some other common names for this include "daily", "sync",
 and "scrum".
 
 > [!INFO]
-> 
-> The term "standup" is an on-the-nose reference to the fact that some teams would literally stand up for the duration of the meeting as a way to encourage everyone to keep it short - usually less than 15 minutes.
+>
+> The term "standup" is an on-the-nose reference to the fact that some teams
+> would literally stand up for the duration of the meeting as a way to encourage
+> everyone to keep it short - usually less than 15 minutes.
 
 ## Why most folks don't love standup
 
 Standup as it is commonly practiced can be rote, repetitive, and thanks to
-modern project management tools... *redundant*.
+modern project management tools... _redundant_.
 
 Be honest, _how easy is it for you to zone out while people rattle off their
 todo list when it largely doesn't impact you_? This is how most people feel in

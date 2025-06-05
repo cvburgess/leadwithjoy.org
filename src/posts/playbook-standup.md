@@ -21,7 +21,10 @@ dreaded time suck you multitask through. Here's how to adapt your standup for
 the challenges your team is facing, today.
 
 > [!INFO]
-> This playbook assumes you already know the basics of running a standup, but you can always check out the [Standup Guide](standup-guide.md) for more in-depth information about the building blocks and philosophy of an awesome standup.
+> This playbook assumes you already know the basics of running a standup, but
+> you can always check out the [Standup Guide](standup-guide.md) for more
+> in-depth information about the building blocks and philosophy of an awesome
+> standup.
 
 ## When you just want a status update
 
