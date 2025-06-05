@@ -1,6 +1,8 @@
 import lume from "lume/mod.ts";
 import { Page } from "lume/core/file.ts";
 
+import resolveUrls from "lume/plugins/resolve_urls.ts";
+import checkUrls from "lume/plugins/check_urls.ts";
 import jsx from "lume/plugins/jsx.ts";
 import tailwindcss from "lume/plugins/tailwindcss.ts";
 import pagefind from "lume/plugins/pagefind.ts";
@@ -25,6 +27,8 @@ const site = lume({
   },
 });
 
+site.use(resolveUrls());
+site.use(checkUrls());
 site.use(jsx());
 site.use(tailwindcss());
 site.use(pagefind());
