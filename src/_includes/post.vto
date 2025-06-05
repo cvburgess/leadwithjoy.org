@@ -10,16 +10,26 @@ layout: base.vto
 </div>
 
 <div class="flex flex-wrap">
-
   {{ if videoId }}
     <div class="flex mt-8 w-full rounded-box shadow-md p-4 bg-base-200 aspect-[500/315] overflow-hidden">
-      <iframe class="w-full h-full rounded-box" src="https://www.youtube-nocookie.com/embed/{{ videoId }}" frameborder="no" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe
+        class="w-full h-full rounded-box"
+        src="https://www.youtube-nocookie.com/embed/{{ videoId }}"
+        frameborder="no"
+        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
     </div>
   {{ /if }}
 
   {{ if episodeId }}
     <div class="mt-8 rounded-box shadow-md p-4 w-full h-[200px] overflow-hidden bg-base-200">
-      <iframe class="w-full h-[200px] rounded-box" frameborder="no" scrolling="no" src="https://player.captivate.fm/episode/{{ episodeId }}"></iframe>
+      <iframe
+        class="w-full h-[200px] rounded-box"
+        frameborder="no"
+        scrolling="no"
+        src="https://player.captivate.fm/episode/{{ episodeId }}"
+      ></iframe>
     </div>
   {{ /if }}
 
@@ -28,12 +38,18 @@ layout: base.vto
       <ol class="list-none p-0 m-0">
         {{ for item of toc }}
           <li class="">
-            <a href="#{{ item.slug }}" class="flex py-2 px-4 font-normal text-sm text-base-content no-underline hover:text-primary transition-all duration-50 text-balance leading-5">{{ item.text }}</a>
+            <a
+              href="#{{ item.slug }}"
+              class="flex py-2 px-4 font-normal text-sm text-base-content no-underline hover:text-primary transition-all duration-50 text-balance leading-5"
+            >{{ item.text }}</a>
             {{ if item.children && item.children.length }}
               <ul class="list-none pl-4">
                 {{ for child of item.children }}
                   <li class="">
-                    <a href="#{{ child.slug }}" class="flex py-2 px-4 font-normal text-sm text-base-content no-underline hover:text-primary transition-all duration-50 text-balance leading-5">{{ child.text }}</a>
+                    <a
+                      href="#{{ child.slug }}"
+                      class="flex py-2 px-4 font-normal text-sm text-base-content no-underline hover:text-primary transition-all duration-50 text-balance leading-5"
+                    >{{ child.text }}</a>
                   </li>
                 {{ /for }}
               </ul>
@@ -47,30 +63,50 @@ layout: base.vto
   <div class="flex-1 prose max-w-none print:prose-sm prose-a:text-primary prose-headings:font-black prose-headings:text-primary prose-strong:font-bold prose-img:m-0">
     {{ content }}
   </div>
-
 </div>
 
-{{ set tagsQuery = tags ? tags.map(tag => tag.includes(" ") ? `'${tag}'` : tag).join("|") : "" }}
-{{ set searchTerm = `title!='${title}' type=crash-course|playbook|deep-dive|guide ${tagsQuery}` }}
+{{
+  set tagsQuery = tags
+  ? tags.map((tag) => tag.includes(" ") ? `'${tag}'` : tag).join("|")
+  : ""
+}}
+{{
+  set searchTerm = `title!='${title}' type=crash-course|playbook|deep-dive|guide ${tagsQuery}`
+}}
 {{ set relatedPosts = search.pages(searchTerm, "date", 3) }}
 
 {{ if relatedPosts && relatedPosts.length }}
   <div class="divider mt-24 mb-8 print:hidden">
-    <h2 class="text-primary text-center text-3xl font-black mx-0 sm:mx-16">Dive a little deeper</h2>
+    <h2 class="text-primary text-center text-3xl font-black mx-0 sm:mx-16">
+      Dive a little deeper
+    </h2>
   </div>
-  <p class="subtitle print:hidden">Related posts, videos, and podcast episodes</p>
+  <p class="subtitle print:hidden">
+    Related posts, videos, and podcast episodes
+  </p>
 
   <div class="flex flex-col gap-8 print:hidden">
     {{ for post of relatedPosts }}
-      {{ comp.card({ title: post.title, description: post.description, icon: post.type, url: post.url }) }}
+      {{
+        comp.card({
+          title: post.title,
+          description: post.description,
+          icon: post.type,
+          url: post.url,
+        })
+      }}
     {{ /for }}
   </div>
 {{ /if }}
 
 <div class="flex items-center justify-center flex-wrap my-16 print:hidden">
-  <a class="mx-4 text-lg font-bold link-hover text-primary" href="/">← Go back home</a>
+  <a class="mx-4 text-lg font-bold link-hover text-primary" href="/"
+  >← Go back home</a>
   <span class="mx-4 text-lg hidden sm:inline"> • </span>
-  <a class="mx-4 text-lg font-bold link-hover text-primary" href="{{ metadata.repoUrl }}/blob/main/src{{ inputPath }}">Suggest an edit on GitHub</a>
+  <a
+    class="mx-4 text-lg font-bold link-hover text-primary"
+    href="{{ metadata.repoUrl }}/blob/main/src{{ inputPath }}"
+  >Suggest an edit on GitHub</a>
 </div>
 
 <script src="/scripts/toc.js"></script>

@@ -1,18 +1,18 @@
 ---
 layout: post.vto
-tags: 
+tags:
 type: playbook
-title: 
-description: 
+title:
+description:
 date: ""
-episodeId: 
+episodeId:
 draft: true
 ---
 
 << intro >>
 
 > [!SUMMARY]
-> 
+>
 > << summary >>
 
 ## Section One
