@@ -1,4 +1,5 @@
 {
+  "unstable": ["fmt-component"],
   "tasks": {
     "lume": "echo \"import 'lume/cli.ts'\" | deno run -A -",
     "build": "deno task lume",
