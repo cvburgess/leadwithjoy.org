@@ -5,12 +5,12 @@ tags:
   - meetings
   - retro
 type: playbook
-title: 
-description: 
+title:
+description:
 date: 2025-06-06
-episodeId: 
+episodeId:
 draft: true
-videoId: 
+videoId:
 authors:
   - cvburgess
 ---

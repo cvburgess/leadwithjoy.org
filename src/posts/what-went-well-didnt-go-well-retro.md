@@ -5,12 +5,12 @@ tags:
   - meetings
   - retro
 type: playbook
-title: 
-description: 
+title:
+description:
 date: 2025-06-06
-episodeId: 
+episodeId:
 draft: true
-videoId: 
+videoId:
 authors:
   - cvburgess
 ---
@@ -22,4 +22,5 @@ authors:
 > << summary >>
 
 ## Section One
+
 [preview](https://www.goretro.ai/post/what-went-well-retrospective)

@@ -8,9 +8,9 @@ type: playbook
 title: 4Ls Retro ( Loved, Loathed, Longed For, Learned )
 description: The 4Ls retro can be tricky, but used correctly it can keep the focus on growth and build momentum for your team
 date: 2025-06-06
-episodeId: 
+episodeId:
 draft: true
-videoId: 
+videoId:
 authors:
   - cvburgess
 ---
@@ -22,4 +22,5 @@ authors:
 > << summary >>
 
 ## Section One
+
 [preview](https://www.atlassian.com/team-playbook/plays/4-ls-retrospective-technique)

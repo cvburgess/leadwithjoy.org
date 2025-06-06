@@ -10,8 +10,8 @@ title: How to host an awesome standup
 description: Done correctly, standups can both move your project forward and be a daily opportunity for your team to connect and celebrate
 date: 2023-10-06
 draft: false
-episodeId: 
-videoId: 
+episodeId:
+videoId:
 authors:
   - cvburgess
 ---

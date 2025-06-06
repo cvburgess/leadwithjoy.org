@@ -8,7 +8,7 @@ type: playbook
 title: Good Better Best
 description: The Good Better Best method allows teams to break down ideas quickly and identify the most impactful milestones given existing deadlines and constraints
 date: 2025-05-17
-episodeId: 
+episodeId:
 draft: false
 authors:
   - cvburgess

@@ -6,9 +6,9 @@ tags:
   - retro
 type: playbook
 title: Mario Kart Retro
-description: 
+description:
 date: 2025-06-04
-episodeId: 
+episodeId:
 draft: true
 authors:
   - cvburgess
