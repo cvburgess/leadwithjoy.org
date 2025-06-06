@@ -5,14 +5,14 @@ tags:
   - meetings
   - retro
 type: playbook
-title: Mario Kart Retro
+title: 
 description: 
-date: 2025-06-04
+date: 2025-06-06
 episodeId: 
 draft: true
+videoId: 
 authors:
   - cvburgess
-videoId:
 ---
 
 << intro >>
@@ -22,5 +22,4 @@ videoId:
 > << summary >>
 
 ## Section One
-
-[preview](https://medium.com/openclassrooms-product-design-and-engineering/agile-retrospective-welcome-to-mario-kart-5fc47da51052)
+[preview](https://www.goretro.ai/post/what-went-well-retrospective)

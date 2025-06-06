@@ -3,15 +3,16 @@ layout: post.vto
 tags:
   - agile
   - meetings
-  - process
-  - project
-  - management
   - standup
 type: playbook
 title: The Standup Playbook
 description: How to find the most effective format for the challenges your team is facing today
 date: 2023-10-05
 draft: true
+videoId: 
+episodeId: 
+authors:
+  - cvburgess
 ---
 
 ## Introduction

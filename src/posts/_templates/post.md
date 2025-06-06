@@ -4,8 +4,9 @@ tags:
 type: playbook
 title:
 description:
-date: ""
+date: "{{date}}"
 episodeId:
+videoId:
 draft: true
 ---
 

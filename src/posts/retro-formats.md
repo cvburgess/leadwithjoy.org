@@ -3,6 +3,8 @@ layout: post.vto
 tags:
   - morale
   - retro
+  - meetings
+  - agile
 type: guide
 title: Picking a Retro Format
 description: How to keep retros feeling fresh and hand-crafted for the moment your team is reflecting upon
@@ -10,6 +12,8 @@ date: 2023-10-04
 draft: false
 authors:
   - cvburgess
+episodeId: 
+videoId:
 ---
 
 Retros (short for retrospectives) are a way to reflect on sprints, projects, and
