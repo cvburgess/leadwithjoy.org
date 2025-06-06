@@ -62,6 +62,15 @@ layout: base.vto
 
   <div class="flex-1 prose max-w-none print:prose-sm prose-a:text-primary prose-headings:font-black prose-headings:text-primary prose-strong:font-bold prose-img:m-0">
     {{ content }}
+    <div>
+      {{# {{ for author of authors }}
+        {{
+          comp.author(contributors.find((c) =>
+            c.username === author
+          ))
+        }}
+      {{ /for }} #}}
+    </div>
   </div>
 </div>
 

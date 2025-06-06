@@ -5,12 +5,9 @@ layout: base.vto
 <p class="subtitle">Want to get involved? Send an email or open a PR!</p>
 
 <div class="flex flex-wrap gap-8 justify-center items-center">
-  {{
-    comp.contributor({
-      name: "Charles Burgess",
-      url: "https://cvburgess.com/",
-    })
-  }}
+  {{ for contributor of contributors }}
+    {{ comp.contributor(contributor) }}
+  {{ /for }}
 </div>
 
 <h1 class="title">Open Source</h1>
