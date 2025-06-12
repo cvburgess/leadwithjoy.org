@@ -5,7 +5,9 @@ layout: base.vto
 <p class="subtitle">Want to get involved? Send an email or open a PR!</p>
 
 <div class="flex flex-wrap gap-8 justify-center items-center">
-  {{ comp.contributor({ name: "Charles Burgess", url: "https://cvburgess.com/" }) }}
+  {{ for contributor of contributors }}
+    {{ comp.contributor(contributor) }}
+  {{ /for }}
 </div>
 
 <h1 class="title">Open Source</h1>
@@ -14,6 +16,11 @@ layout: base.vto
 <div class="flex flex-wrap gap-8 justify-center items-center">
   {{ comp.openSource({ title: "Deno", url: "https://deno.land/" }) }}
   {{ comp.openSource({ title: "Lume", url: "https://lume.land/" }) }}
-  {{ comp.openSource({ title: "Tailwind", url: "https://tailwindcss.com/" }) }}
+  {{
+    comp.openSource({
+      title: "Tailwind",
+      url: "https://tailwindcss.com/",
+    })
+  }}
   {{ comp.openSource({ title: "daisyUI", url: "https://daisyui.com/" }) }}
 </div>

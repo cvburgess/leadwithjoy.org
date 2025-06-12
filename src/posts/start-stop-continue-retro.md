@@ -1,13 +1,18 @@
 ---
 layout: post.vto
 tags:
+  - agile
+  - meetings
+  - retro
 type: playbook
 title:
 description:
-date: "{{date}}"
+date: 2025-06-06
 episodeId:
-videoId:
 draft: true
+videoId:
+authors:
+  - cvburgess
 ---
 
 << intro >>
@@ -17,3 +22,5 @@ draft: true
 > << summary >>
 
 ## Section One
+
+[preview](https://easyretro.io/templates/start-stop-continue/)
