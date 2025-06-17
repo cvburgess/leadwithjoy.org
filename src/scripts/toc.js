@@ -1,6 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
   let currentActive = null;
-  const activeClasses = ["bg-primary", "!text-base-200", "!font-bold", "rounded-field"];
+  const activeClasses = [
+    "bg-primary",
+    "!text-base-200",
+    "!font-bold",
+    "rounded-field",
+  ];
 
   const observer = new IntersectionObserver((entries) => {
     const visibleEntries = entries.filter((entry) => entry.isIntersecting);
