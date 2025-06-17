@@ -34,7 +34,11 @@ autopilot.
 
 ## When to run a Mario Kart retro
 
-And to be clear, this idea is not mine, but borrowed from
+Todo
+
+## Origin story
+
+This idea was borrowed from
 [Adrien Guéret](https://medium.com/@adriengueret) and adapted for a
 remote/hybrid world where a physical board game isn't as easy to execute. Thank
 you Adrien for this brilliant idea!
@@ -45,7 +49,7 @@ you Adrien for this brilliant idea!
 
 Here's a step-by-step guide to running a Mario Kart retro with your team.
 
-### Key Takeaways
+### Key takeaways
 
 - Everyone that contributed to the sprint / project / milestone is heard
 - Limited options for "cards" creates a more nuanced conversation
@@ -69,7 +73,7 @@ everyone to come prepared with their items. Being that we are all human and time
 is fickle, I also leave five minutes at the beginning of the call for people to
 "wrap them up".
 
-**Rules and Limitations**
+### Rules
 
 - Each participant must pick **_exactly 3 items_** to share
 - **Max** 2 bananas 🍌 🍌
