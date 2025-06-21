@@ -38,10 +38,9 @@ Todo
 
 ## Origin story
 
-This idea was borrowed from
-[Adrien Guéret](https://medium.com/@adriengueret) and adapted for a
-remote/hybrid world where a physical board game isn't as easy to execute. Thank
-you Adrien for this brilliant idea!
+This idea was borrowed from [Adrien Guéret](https://medium.com/@adriengueret)
+and adapted for a remote/hybrid world where a physical board game isn't as easy
+to execute. Thank you Adrien for this brilliant idea!
 
 [preview](https://medium.com/openclassrooms-product-design-and-engineering/agile-retrospective-welcome-to-mario-kart-5fc47da51052)
 

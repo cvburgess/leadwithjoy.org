@@ -1,11 +1,11 @@
 ---
 layout: post.vto
-tags: 
+tags:
 type: playbook
-title: 
-description: 
+title:
+description:
 date: "{{date}}"
-episodeId: 
+episodeId:
 draft: true
 authors:
   - cvburgess
