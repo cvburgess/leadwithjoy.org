@@ -12,5 +12,19 @@
     "image": "https://miro.medium.com/v2/resize:fit:1200/1*ZScHIcxczybqdLyv3vd6Wg.jpeg",
     "hostname": "medium.com",
     "url": "https://medium.com/openclassrooms-product-design-and-engineering/agile-retrospective-welcome-to-mario-kart-5fc47da51052"
+  },
+  "https://www.6sigma.us/six-sigma-in-focus/weighted-scoring-prioritization/": {
+    "title": "Weighted Scoring Prioritization : Make Informed Decisions - SixSigma.us",
+    "description": "Weighted scoring prioritization is a framework to score and prioritize features based on criteria aligning with your product strategy.",
+    "image": "https://www.6sigma.us/wp-content/uploads/2024/07/weighted-scoring-prioritization.webp",
+    "hostname": "www.6sigma.us",
+    "url": "https://www.6sigma.us/six-sigma-in-focus/weighted-scoring-prioritization/"
+  },
+  "https://www.theuncertaintyproject.org/tools/rumsfeld-matrix": {
+    "title": "Rumsfeld Matrix",
+    "description": "Categorizes information into known knowns, known unknowns, unknown knowns, and unknown unknowns, helping navigate uncertainty and uncover risks",
+    "image": "https://cdn.prod.website-files.com/637cfb148f84649f297a8d8c/642278fde4329dee08587b7b_grid_0%20(3).png",
+    "hostname": "www.theuncertaintyproject.org",
+    "url": "https://www.theuncertaintyproject.org/tools/rumsfeld-matrix"
   }
 }
