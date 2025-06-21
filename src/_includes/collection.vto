@@ -2,15 +2,26 @@
 layout: base.vto
 ---
 <h1 class="title">
-  {{ if title }}{{ title }}{{ else }}Results for <strong class="text-accent-green">{{ term | upper }}{{ /if }}
+  {{ if title }}
+    {{ title }}
+  {{ else }}
+    Results for <strong class="text-accent-green">{{ term | upper }}</strong>
+  {{ /if }}
 </h1>
 
 <div class="flex flex-col">
   {{ for post of posts }}
-    {{ comp.card({ title: post.title, description: post.description, icon: post.type, url: post.url }) }}
+    {{
+      comp.card({
+        title: post.title,
+        description: post.description,
+        icon: post.type,
+        url: post.url,
+      })
+    }}
   {{ /for }}
 </div>
 
 <div class="flex justify-center items-center my-16">
-  <a class="text-lg" href="/lead-with-joy">← Back to the Hub</a>
+  <a class="text-lg" href="/">← Go back home</a>
 </div>

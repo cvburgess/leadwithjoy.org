@@ -1,6 +1,8 @@
 import lume from "lume/mod.ts";
 import { Page } from "lume/core/file.ts";
 
+import resolveUrls from "lume/plugins/resolve_urls.ts";
+import checkUrls from "lume/plugins/check_urls.ts";
 import jsx from "lume/plugins/jsx.ts";
 import tailwindcss from "lume/plugins/tailwindcss.ts";
 import pagefind from "lume/plugins/pagefind.ts";
@@ -8,7 +10,7 @@ import toc from "https://deno.land/x/lume_markdown_plugins/toc.ts";
 
 import anchor from "npm:markdown-it-anchor";
 
-import mdItObsidianCallouts from 'markdown-it-obsidian-callouts';
+import mdItObsidianCallouts from "markdown-it-obsidian-callouts";
 
 import { processPreviews } from "./src/utils/processPreviews.ts";
 
@@ -25,6 +27,8 @@ const site = lume({
   },
 });
 
+site.use(resolveUrls());
+site.use(checkUrls());
 site.use(jsx());
 site.use(tailwindcss());
 site.use(pagefind());
@@ -60,7 +64,7 @@ site.hooks.addMarkdownItPlugin(mdItObsidianCallouts);
 // --------- PUBLIC FILES ---------- //
 
 site.add([".css"]);
-site.add("scripts");  // Add JavaScript files
+site.add("scripts"); // Add JavaScript files
 site.add([".jpg", ".jpeg", ".gif", ".png", ".webp", ".svg", ".ico"]);
 
 // --------- FILTERS ---------- //
@@ -108,8 +112,9 @@ site.helper("button", (text, link, classes) => {
   const target = link?.startsWith("/")
     ? `target="_self"`
     : `target="_blank" rel="noopener"`;
-  return `<div class="button ${classes || ""
-    }"><a href="${link}" ${target}><span>${text}</span></a></div>`;
+  return `<div class="button ${
+    classes || ""
+  }"><a href="${link}" ${target}><span>${text}</span></a></div>`;
 }, { type: "tag" });
 
 export default site;

@@ -76,7 +76,7 @@
 /* ---------- CUSTOM HELPERS ---------- */
 
 .title {
-  @apply mt-32 mb-4 text-center text-4xl font-black;
+  @apply mt-24 mb-4 text-center text-4xl font-black;
 }
 .subtitle {
   @apply mb-12 text-center text-lg font-light text-base-content/80 italic font-serif;
@@ -142,13 +142,15 @@
 .prose ul li::marker {
   @apply text-xl;
 }
+.prose ul li ul li {
+  @apply m-0;
+}
 .prose img,
 .prose figure {
   @apply m-0;
 }
 
 /* ---------- OBSIDIAN CALLOUTS ---------- */
-
 .callout {
   @apply border-l-4 border-info pl-4 ml-0 mt-10 text-info-content;
 }
@@ -169,4 +171,13 @@
 }
 .callout .callout-title svg {
   @apply size-4;
+}
+ 
+.callout[data-callout="caution"],
+.callout[data-callout="caution"] * {
+  @apply border-error !text-error-content;
+}
+.callout[data-callout="tip"],
+.callout[data-callout="tip"] * {
+  @apply border-accent !text-accent-content;
 }

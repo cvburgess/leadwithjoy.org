@@ -4,12 +4,16 @@ tags:
   - agile
   - meetings
   - process
-  - project management
   - standup
 type: guide
 title: The Standup Guide
 description: Done correctly, standups can both move your project forward and be a daily opportunity for your team to connect and celebrate
 date: 2023-12-30
+draft: true
+episodeId:
+videoId:
+authors:
+  - cvburgess
 ---
 
 ## What is standup and why do we call it that?
@@ -18,19 +22,16 @@ Standup is an agile technique that was designed to get everyone aligned -
 usually once a day. Some other common names for this include "daily", "sync",
 and "scrum".
 
-Most agile teams use one of two variations, "round robin" and "walk the board",
-to get a glimpse into the current status of the project.
-
-The reason the name "standup" has stuck is that many teams will literally stand
-for the duration of the meeting as a way to encourage everyone to keep it
-short - usually less than 15 minutes.
-
-[preview](https://www.atlassian.com/team-playbook/plays/standups/)
+> [!INFO]
+>
+> The term "standup" is an on-the-nose reference to the fact that some teams
+> would literally stand up for the duration of the meeting as a way to encourage
+> everyone to keep it short - usually less than 15 minutes.
 
 ## Why most folks don't love standup
 
-Standup as it is commonly practiced has become rote, repetitive, and thanks to
-modern project management tools... redundant.
+Standup as it is commonly practiced can be rote, repetitive, and thanks to
+modern project management tools... _redundant_.
 
 Be honest, _how easy is it for you to zone out while people rattle off their
 todo list when it largely doesn't impact you_? This is how most people feel in
@@ -86,11 +87,3 @@ machine gun of priorities, requests, fires, and more being shot at them
 throughout the week. Having someone in a leader role clearly articulate the #1
 priority of the team (or each individual) is always appreciated, even if it was
 assumed or guessed correctly.
-
-## How to tailor a standup to your team
-
-For a complete guide, check out the [Standup Playbook](/playbook-standup).
-
-[preview](/posts/playbook-standup)
-
-## Helpful resources from around the web

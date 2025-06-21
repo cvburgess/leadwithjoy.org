@@ -1,11 +1,13 @@
 ---
 layout: base.vto
-ogImage: joy
 ---
 
 <div class="flex flex-col-reverse sm:flex-row gap-16 sm:gap-8 xl:gap-16 mt-16 sm:mt-24 mb-0 sm:mb-40 items-center justify-center">
   <p class="text-2xl sm:text-4xl/12 text-center sm:text-left font-black sm:w-[50%]">
-    Tools and insights to help <br class="hidden sm:visible"/>engineering leaders change <br class="hidden sm:visible"/> how we work, <span class="text-primary">together</span>.
+    Tools and insights to help <br class="hidden sm:visible" />engineering
+    leaders change <br class="hidden sm:visible" /> how we work, <span
+      class="text-primary"
+    >together</span>.
   </p>
   {{ include "./img/hero.svg" }}
 </div>
@@ -14,37 +16,75 @@ ogImage: joy
 <p class="subtitle">Some things I've been thinking on lately.</p>
 
 <div class="flex flex-col gap-8">
-  {{ for post of search.pages("type=crash-course|playbook|deep-dive|guide", "date=desc", 10) }}
-    {{ comp.card({ title: post.title, description: post.description, icon: post.type, url: post.url }) }}
+  {{
+    for post of search.pages("type=crash-course|playbook|deep-dive|guide", "date=desc", 10)
+  }}
+    {{
+      comp.card({
+        title: post.title,
+        description: post.description,
+        icon: post.type,
+        url: post.url,
+      })
+    }}
   {{ /for }}
 </div>
 
 <h2 class="title">Search All Posts</h2>
-<p class="subtitle">For the people who know what they are looking for. &nbsp;Must be nice.</p>
+<p class="subtitle">
+  For the people who know what they are looking for. &nbsp;Must be nice.
+</p>
 <div id="search"></div>
 
 <h2 class="title">Categories</h2>
 <p class="subtitle">The same basic ideas, but different shapes and sizes.</p>
 
 <div class="flex flex-wrap gap-8 justify-center items-center">
-  {{ comp.tile({ title: "Crash Courses", icon: "crash-course", url: "/tags/crash-course/" }) }}
-  {{ comp.tile({ title: "Playbooks", icon: "playbook", url: "/tags/playbook/" }) }}
+  {{
+    comp.tile({
+      title: "Crash Courses",
+      icon: "crash-course",
+      url: "/tags/crash-course/",
+    })
+  }}
+  {{
+    comp.tile({
+      title: "Playbooks",
+      icon: "playbook",
+      url: "/tags/playbook/",
+    })
+  }}
   {{ comp.tile({ title: "Guides", icon: "guide", url: "/tags/guide/" }) }}
-  {{ comp.tile({ title: "Deep Dives", icon: "deep-dive", url: "/tags/deep-dive/" }) }}
+  {{
+    comp.tile({
+      title: "Deep Dives",
+      icon: "deep-dive",
+      url: "/tags/deep-dive/",
+    })
+  }}
 </div>
 
 <h2 class="title">Listen to the Podcast</h2>
-<p class="subtitle">Prefer to soak up tidbits while commuting or walking the dog? <br/> Grab the pod and live your best life.</p>
+<p class="subtitle">
+  Prefer to soak up tidbits while commuting or walking the dog? <br /> Grab the
+  pod and live your best life.
+</p>
 
 <div class="flex flex-col gap-8 md:flex-row flex-wrap gap-6 justify-center items-center my-16">
-  {{ comp.outlineButton({ title: "Apple Podcasts", variant: "accent" })}}
-  {{ comp.outlineButton({ title: "Spotify", variant: "success" })}}
-  {{ comp.outlineButton({ title: "Web Player / RSS Feed", variant: "info" })}}
+  {{ comp.outlineButton({ title: "Apple Podcasts", variant: "accent" }) }}
+  {{ comp.outlineButton({ title: "Spotify", variant: "success" }) }}
+  {{
+    comp.outlineButton({
+      title: "Web Player / RSS Feed",
+      variant: "info",
+    })
+  }}
 </div>
 
 <p class="mt-24 mb-12 text-center italic text-base-content/60 font-serif">
-  <span class="font-bold text-primary mr-0.5">Lead with Joy</span> is a love letter to all the wonderful people
-  <br/>I've gotten to coach, manage, and mentor over the years.
-  <br/>
+  <span class="font-bold text-primary mr-0.5">Lead with Joy</span> is a love
+  letter to all the wonderful people
+  <br />I've gotten to coach, manage, and mentor over the years.
+  <br />
   I hope it keeps you company on your many adventures ahead.
 </p>
