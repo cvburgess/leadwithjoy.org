@@ -4,11 +4,16 @@ tags:
   - process
   - project
   - management
+  - standup
 type: guide
 title: How to host an awesome standup
 description: Done correctly, standups can both move your project forward and be a daily opportunity for your team to connect and celebrate
 date: 2023-10-06
-draft: false
+draft: true
+episodeId:
+videoId:
+authors:
+  - cvburgess
 ---
 
 ## What is the point of standup, anyway?
@@ -206,9 +211,9 @@ doesn't, and add your own!
 
 - Playing a shared team Spotify playlist at the start and/or end of the call
 - Starting a water-cooler conversation before the call "starts"
-	- Pop culture, hobbies, and personal connections are all great
-	- Avoid the usual awkward turtles: politics, sex, drugs, controversy, etc
+  - Pop culture, hobbies, and personal connections are all great
+  - Avoid the usual awkward turtles: politics, sex, drugs, controversy, etc
 - Picking a question to answer alongside each person's update
-	- This could be an "ice breaker", a silly would-you-rather, trivia, etc
+  - This could be an "ice breaker", a silly would-you-rather, trivia, etc
 - Giving shoutouts for birthdays, work anniversaries, and wins
 - Addressing change with the team (hires, fires, pivots, etc)

@@ -1,30 +1,31 @@
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <!-- Social Sharing -->
-<title>
-  {{ if title }}{{ title }} • {{ /if }}Lead with Joy
-</title>
+<title>{{ `${title ? (title + " • ") : ""} Lead with Joy` }}</title>
 <meta
   property="og:title"
-  content="{{ title || (episode && episode.title) || metadata.title }}"
+  content="{{ title || episode?.title || metadata.title }}"
 />
 <meta
   name="description"
-  content="{{ description || (episode && episode.description) || metadata.description }}"
+  content="{{ description || episode?.description || metadata.description }}"
 />
 <meta
   property="og:description"
-  content="{{ description || (episode && episode.description) || metadata.description }}"
+  content="{{ description || episode?.description || metadata.description }}"
 />
-<meta property="og:image" content="{{ ogImage ? `/img/og/og-${ogImage}.jpg` : (type ? `/img/og/og-${type}.jpg` : '/img/og/og-default.jpg') }}"/>
-<meta property="og:image:type" content="image/jpg"/>
-<meta property="og:image:width" content="1024"/>
-<meta property="og:image:height" content="1024"/>
+<meta
+  property="og:image"
+  content='{{ `/img/og/og-${ogImage || type || "default"}.jpg` }}'
+/>
+<meta property="og:image:type" content="image/jpg" />
+<meta property="og:image:width" content="1024" />
+<meta property="og:image:height" content="1024" />
 <!-- Dark Reader -->
 <meta name="color-scheme" content="light dark" />
 <!-- Styles -->
-<link rel="stylesheet" href="/index.css"/>
+<link rel="stylesheet" href="/index.css" />
 <!-- Favicon -->
-<link rel="icon" href="/img/favicon/favicon.ico"/>
-<link rel="icon" href="/img/favicon/favicon.svg" type="image/svg+xml"/>
-<link rel="apple-touch-icon" href="/img/favicon/favicon-180.png"/>
+<link rel="icon" href="/img/favicon/favicon.ico" />
+<link rel="icon" href="/img/favicon/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="/img/favicon/favicon-180.png" />

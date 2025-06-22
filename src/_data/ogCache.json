@@ -1,9 +1,44 @@
 {
-  "https://www.atlassian.com/team-playbook/plays/standups/": {
-    "title": "Stand Up Meetings for Team Communication and Collaboration | Atlassian",
-    "description": "Stand up meetings aren&#039;t just for software teams anymore. Take 5-10 min each day to sync up and plan ahead. Here&#039;s instructions, tips and variations.",
-    "image": "https://wac-cdn.atlassian.com/dam/jcr:a839083c-c7cf-4441-93a5-147be72232c0/standups_metadata@2x.png",
+  "https://easyretro.io/templates/start-stop-continue/": {
+    "title": "",
+    "description": "",
+    "image": "https://easyretro.io/img/boardExample.png",
+    "hostname": "easyretro.io",
+    "url": "https://easyretro.io/templates/start-stop-continue/"
+  },
+  "https://www.retrium.com/retrospective-techniques/whatwentwell-whatdidntgowell": {
+    "title": "What Went Well Retrospective",
+    "description": "What Went Well? What Didn't Go Well? is a basic retrospective technique that focuses on your agile team's strengths and weaknesses.",
+    "image": "",
+    "hostname": "www.retrium.com",
+    "url": "https://www.retrium.com/retrospective-techniques/whatwentwell-whatdidntgowell"
+  },
+  "https://www.atlassian.com/team-playbook/plays/4-ls-retrospective-technique": {
+    "title": "The \"4 Ls\" Retrospective Technique | Atlassian",
+    "description": "Loved, learned, loathed, and longed for. Use this classic technique in team retrospectives, or for personal reflection. Instructions and variations here.",
+    "image": "https://dam-cdn.atl.orangelogic.com/AssetLink/eh8g15s41s7osi8o80c85leu55r1ak5n/fl_keep_metadata/CSD-13917_4Ls_Play_update_Metadata-_670x350.webp",
     "hostname": "www.atlassian.com",
-    "url": "https://www.atlassian.com/team-playbook/plays/standups/"
+    "url": "https://www.atlassian.com/team-playbook/plays/4-ls-retrospective-technique"
+  },
+  "https://medium.com/openclassrooms-product-design-and-engineering/agile-retrospective-welcome-to-mario-kart-5fc47da51052": {
+    "title": "Agile retrospective: welcome to Mario Kart!",
+    "description": "Let’s move forward and avoid bananas!",
+    "image": "https://miro.medium.com/v2/resize:fit:1200/1*ZScHIcxczybqdLyv3vd6Wg.jpeg",
+    "hostname": "medium.com",
+    "url": "https://medium.com/openclassrooms-product-design-and-engineering/agile-retrospective-welcome-to-mario-kart-5fc47da51052"
+  },
+  "https://www.teamretro.com/retrospectives/mad-sad-glad-retrospective": {
+    "title": "Mad Sad Glad Retrospective - TeamRetro",
+    "description": "The mad sad glad retrospective is a great way to boost morale, uncover barriers to productivity and get your team working better together.",
+    "image": "",
+    "hostname": "www.teamretro.com",
+    "url": "https://www.teamretro.com/retrospectives/mad-sad-glad-retrospective"
+  },
+  "https://www.freecodecamp.org/news/how-to-run-a-sprint-retrospective-start-stop-continue-method": {
+    "title": "How to Run a Sprint Retrospective Using the Start, Stop, Continue Method",
+    "description": "I’ve been writing a lot of articles lately on Agile methodologies. And for this one, I wanted to cover how to get the most out of a Sprint Retrospective. I’ve been participating and running Sprint Retrospectives now for 15 years and I truly believe t...",
+    "image": "https://cdn.hashnode.com/res/hashnode/image/upload/v1740494845460/a0181901-d715-49ce-881b-936b1143d341.png",
+    "hostname": "www.freecodecamp.org",
+    "url": "https://www.freecodecamp.org/news/how-to-run-a-sprint-retrospective-start-stop-continue-method"
   }
 }
