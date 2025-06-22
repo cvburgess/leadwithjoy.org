@@ -455,14 +455,17 @@ proactively so there are no surprises here.
 
 #### Review backlog
 
-Now that all items are scored and sorted, spend time with the team discussing the following:
+Now that all items are scored and sorted, spend time with the team discussing
+the following:
 
 1. Do any of the final scores surprise us?
 2. Are there any "easy wins" we should focus on?
 
-These two questions can get the team thinking about tradeoffs and moving in the right direction!
+These two questions can get the team thinking about tradeoffs and moving in the
+right direction!
 
-If you don't have much time left to discuss, this step can be covered in a retro, standup, or follow-up meeting.
+If you don't have much time left to discuss, this step can be covered in a
+retro, standup, or follow-up meeting.
 
 ### Resources
 
