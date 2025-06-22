@@ -66,7 +66,6 @@ site.hooks.addMarkdownItPlugin(mdItObsidianCallouts);
 site.add([".css"]);
 site.add("scripts"); // Add JavaScript files
 site.add([".jpg", ".jpeg", ".gif", ".png", ".webp", ".svg", ".ico"]);
-site.add("posts/_assets");
 
 // --------- FILTERS ---------- //
 
@@ -113,9 +112,8 @@ site.helper("button", (text, link, classes) => {
   const target = link?.startsWith("/")
     ? `target="_self"`
     : `target="_blank" rel="noopener"`;
-  return `<div class="button ${
-    classes || ""
-  }"><a href="${link}" ${target}><span>${text}</span></a></div>`;
+  return `<div class="button ${classes || ""
+    }"><a href="${link}" ${target}><span>${text}</span></a></div>`;
 }, { type: "tag" });
 
 export default site;
