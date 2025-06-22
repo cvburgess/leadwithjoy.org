@@ -52,7 +52,7 @@ as a natural check-in point where we can keep moving forward or adjust course.
 
 The **Start Stop Continue** format is my favorite for new teams!
 
-[preview](https://easyretro.io/templates/start-stop-continue/)
+[preview](https://www.freecodecamp.org/news/how-to-run-a-sprint-retrospective-start-stop-continue-method)
 
 It's a very simple format to run, and the action items are as clear as day. By
 using verbs as categories rather than adjectives, this format guarantees the
@@ -83,7 +83,7 @@ If you bit off a lot all at once, consider **Start Stop Continue** which is
 incredibly actionable and can isolate exactly which levers the team wants to
 adjust.
 
-## When the team is frustrated by things outside their of control
+## When the team is frustrated by things outside their control
 
 Sometimes you can't change what you can't change.
 

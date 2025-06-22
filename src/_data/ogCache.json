@@ -33,5 +33,12 @@
     "image": "",
     "hostname": "www.teamretro.com",
     "url": "https://www.teamretro.com/retrospectives/mad-sad-glad-retrospective"
+  },
+  "https://www.freecodecamp.org/news/how-to-run-a-sprint-retrospective-start-stop-continue-method": {
+    "title": "How to Run a Sprint Retrospective Using the Start, Stop, Continue Method",
+    "description": "I’ve been writing a lot of articles lately on Agile methodologies. And for this one, I wanted to cover how to get the most out of a Sprint Retrospective. I’ve been participating and running Sprint Retrospectives now for 15 years and I truly believe t...",
+    "image": "https://cdn.hashnode.com/res/hashnode/image/upload/v1740494845460/a0181901-d715-49ce-881b-936b1143d341.png",
+    "hostname": "www.freecodecamp.org",
+    "url": "https://www.freecodecamp.org/news/how-to-run-a-sprint-retrospective-start-stop-continue-method"
   }
 }
