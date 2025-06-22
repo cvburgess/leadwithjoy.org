@@ -124,8 +124,8 @@ a disproportionate amount of time.
 
 Sometimes things don't go your way for any number of reasons.
 
-The **Mad Sad Glad** format is a healthy way to let teams
-vocalize their emotions without necessarily generating too many action items.
+The **Mad Sad Glad** format is a healthy way to let teams vocalize their
+emotions without necessarily generating too many action items.
 
 [preview](https://www.teamretro.com/retrospectives/mad-sad-glad-retrospective)
 
@@ -157,8 +157,8 @@ stays fairly blameless is also critical for the team's health and morale.
 
 ## When the team tackled something new and rose to the occasion
 
-The **4Ls** format shines here because it has a not-so-secret
-superpower: _Learned_.
+The **4Ls** format shines here because it has a not-so-secret superpower:
+_Learned_.
 
 [preview](https://www.atlassian.com/team-playbook/plays/4-ls-retrospective-technique)
 
