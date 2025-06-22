@@ -13,7 +13,6 @@ interface OGData {
 }
 
 const fetchLocalData = (url: string): Promise<OGData> => {
-
   const page = site.pages.find((page) => `${page.src.path}/` === url);
 
   if (!page) throw new Error(`Preview Error (page not found): ${url}`);

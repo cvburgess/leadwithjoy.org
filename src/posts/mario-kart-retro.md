@@ -34,10 +34,18 @@ autopilot.
 
 ## When to run a Mario Kart retro
 
-And to be clear, this idea is not mine, but borrowed from
-[Adrien Guéret](https://medium.com/@adriengueret) and adapted for a
-remote/hybrid world where a physical board game isn't as easy to execute. Thank
-you Adrien for this brilliant idea!
+If you often hear from the same folks every sprint, the Mario Kart retro is a
+fun way to hear from **_everyone_**.
+
+This format also shines in giving rounded feedback! Not only does each
+participant get their time in the spotlight, but the items shared are portioned
+out into both positive and negative buckets.
+
+## Origin story
+
+This idea was borrowed from [Adrien Guéret](https://medium.com/@adriengueret)
+and adapted for a remote/hybrid world where a physical board game isn't as easy
+to execute. Thank you Adrien for this brilliant idea!
 
 [preview](https://medium.com/openclassrooms-product-design-and-engineering/agile-retrospective-welcome-to-mario-kart-5fc47da51052)
 
@@ -45,7 +53,7 @@ you Adrien for this brilliant idea!
 
 Here's a step-by-step guide to running a Mario Kart retro with your team.
 
-### Key Takeaways
+### Key takeaways
 
 - Everyone that contributed to the sprint / project / milestone is heard
 - Limited options for "cards" creates a more nuanced conversation

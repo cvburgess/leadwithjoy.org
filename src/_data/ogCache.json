@@ -1,10 +1,24 @@
 {
-  "https://easyretro.io/templates/start-stop-continue/": {
-    "title": "",
-    "description": "",
-    "image": "https://easyretro.io/img/boardExample.png",
-    "hostname": "easyretro.io",
-    "url": "https://easyretro.io/templates/start-stop-continue/"
+  "https://www.freecodecamp.org/news/how-to-run-a-sprint-retrospective-start-stop-continue-method": {
+    "title": "How to Run a Sprint Retrospective Using the Start, Stop, Continue Method",
+    "description": "I’ve been writing a lot of articles lately on Agile methodologies. And for this one, I wanted to cover how to get the most out of a Sprint Retrospective. I’ve been participating and running Sprint Retrospectives now for 15 years and I truly believe t...",
+    "image": "https://cdn.hashnode.com/res/hashnode/image/upload/v1740494845460/a0181901-d715-49ce-881b-936b1143d341.png",
+    "hostname": "www.freecodecamp.org",
+    "url": "https://www.freecodecamp.org/news/how-to-run-a-sprint-retrospective-start-stop-continue-method"
+  },
+  "https://www.6sigma.us/six-sigma-in-focus/weighted-scoring-prioritization/": {
+    "title": "Weighted Scoring Prioritization : Make Informed Decisions - SixSigma.us",
+    "description": "Weighted scoring prioritization is a framework to score and prioritize features based on criteria aligning with your product strategy.",
+    "image": "https://www.6sigma.us/wp-content/uploads/2024/07/weighted-scoring-prioritization.webp",
+    "hostname": "www.6sigma.us",
+    "url": "https://www.6sigma.us/six-sigma-in-focus/weighted-scoring-prioritization/"
+  },
+  "https://www.theuncertaintyproject.org/tools/rumsfeld-matrix": {
+    "title": "Rumsfeld Matrix",
+    "description": "Categorizes information into known knowns, known unknowns, unknown knowns, and unknown unknowns, helping navigate uncertainty and uncover risks",
+    "image": "https://cdn.prod.website-files.com/637cfb148f84649f297a8d8c/642278fde4329dee08587b7b_grid_0%20(3).png",
+    "hostname": "www.theuncertaintyproject.org",
+    "url": "https://www.theuncertaintyproject.org/tools/rumsfeld-matrix"
   },
   "https://www.retrium.com/retrospective-techniques/whatwentwell-whatdidntgowell": {
     "title": "What Went Well Retrospective",
@@ -12,13 +26,6 @@
     "image": "",
     "hostname": "www.retrium.com",
     "url": "https://www.retrium.com/retrospective-techniques/whatwentwell-whatdidntgowell"
-  },
-  "https://www.atlassian.com/team-playbook/plays/4-ls-retrospective-technique": {
-    "title": "The \"4 Ls\" Retrospective Technique | Atlassian",
-    "description": "Loved, learned, loathed, and longed for. Use this classic technique in team retrospectives, or for personal reflection. Instructions and variations here.",
-    "image": "https://dam-cdn.atl.orangelogic.com/AssetLink/eh8g15s41s7osi8o80c85leu55r1ak5n/fl_keep_metadata/CSD-13917_4Ls_Play_update_Metadata-_670x350.webp",
-    "hostname": "www.atlassian.com",
-    "url": "https://www.atlassian.com/team-playbook/plays/4-ls-retrospective-technique"
   },
   "https://medium.com/openclassrooms-product-design-and-engineering/agile-retrospective-welcome-to-mario-kart-5fc47da51052": {
     "title": "Agile retrospective: welcome to Mario Kart!",
@@ -34,11 +41,11 @@
     "hostname": "www.teamretro.com",
     "url": "https://www.teamretro.com/retrospectives/mad-sad-glad-retrospective"
   },
-  "https://www.freecodecamp.org/news/how-to-run-a-sprint-retrospective-start-stop-continue-method": {
-    "title": "How to Run a Sprint Retrospective Using the Start, Stop, Continue Method",
-    "description": "I’ve been writing a lot of articles lately on Agile methodologies. And for this one, I wanted to cover how to get the most out of a Sprint Retrospective. I’ve been participating and running Sprint Retrospectives now for 15 years and I truly believe t...",
-    "image": "https://cdn.hashnode.com/res/hashnode/image/upload/v1740494845460/a0181901-d715-49ce-881b-936b1143d341.png",
-    "hostname": "www.freecodecamp.org",
-    "url": "https://www.freecodecamp.org/news/how-to-run-a-sprint-retrospective-start-stop-continue-method"
+  "https://www.atlassian.com/team-playbook/plays/4-ls-retrospective-technique": {
+    "title": "The \"4 Ls\" Retrospective Technique | Atlassian",
+    "description": "Loved, learned, loathed, and longed for. Use this classic technique in team retrospectives, or for personal reflection. Instructions and variations here.",
+    "image": "https://dam-cdn.atl.orangelogic.com/AssetLink/eh8g15s41s7osi8o80c85leu55r1ak5n/fl_keep_metadata/CSD-13917_4Ls_Play_update_Metadata-_670x350.webp",
+    "hostname": "www.atlassian.com",
+    "url": "https://www.atlassian.com/team-playbook/plays/4-ls-retrospective-technique"
   }
 }

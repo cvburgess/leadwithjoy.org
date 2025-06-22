@@ -126,7 +126,7 @@ choice. Many of these ideas can and should be tossed aside and gather dust and
 you don't need more clutter in your project management tool - I'd bet money on
 that.
 
-## Running the Playbook
+## Running the playbook
 
 Here's a step-by-step guide to running a Good, Better, Best session with your
 team.
