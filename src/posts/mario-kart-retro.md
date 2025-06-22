@@ -9,7 +9,7 @@ title: Mario Kart Retro
 description: Host a retro that encourages teams to celebrate wins, shout out teammates, and share the spotlight. It's also just plain fun, and we could all use a little more fun, right?
 date: 2025-06-04
 episodeId:
-draft: true
+draft: false
 authors:
   - cvburgess
 videoId:
