@@ -34,7 +34,12 @@ autopilot.
 
 ## When to run a Mario Kart retro
 
-Todo
+If you often hear from the same folks every sprint, the Mario Kart retro is a
+fun way to hear from **_everyone_**.
+
+This format also shines in giving rounded feedback! Not only does each
+participant get their time in the spotlight, but the items shared are portioned
+out into both positive and negative buckets.
 
 ## Origin story
 
