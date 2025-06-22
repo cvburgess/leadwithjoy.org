@@ -7,7 +7,7 @@ tags:
   - tools
 type: playbook
 title: Weighted Cost / Benefit Analysis
-description: Organize the backlog with a technique that connects your technical debt and wealth to broader organizational goals so your team can get more done with less chaos
+description: Organize your backlog with this technique that connects technical debt / wealth to broader organizational goals so your team can get more done with less chaos
 date: 2025-06-17
 episodeId:
 videoId:
@@ -58,8 +58,8 @@ is still useful but you may be able to
 ## Origin story
 
 Using a weighted cost benefit analysis to prioritize a backlog is not a new
-concept - project and product managers have been using this in their spreadsheet
-or database tool of choice to help drive roadmaps for _years_.
+concept - project and product managers have been using this with their
+spreadsheet or database tool of choice to help drive roadmaps for _years_.
 
 Once we start thinking of technical debt and technical wealth as a core part of
 our product roadmap, the thought of borrowing and tweaking tried-and-true
@@ -76,6 +76,37 @@ even have used one without knowing if you've ever made a big list of "pros" and
 This is a turbo-charged version of the classic "pros" and "cons" list where we
 try to assign numerical values to define roughly _how much benefit we get and
 for what cost_.
+
+### Benefits
+
+These should be driven largely by the product team and stakeholders and align
+with the goals and objectives (or OKRs) of the organization.
+
+The key metrics and indicators for a B2B organization will likely differ from
+B2C and different markets and products will have different tradeoffs.
+
+> [!NOTE] Every team should have its own unique benefits
+>
+> A user-facing mobile app team may care more about top-line metrics like
+> revenue, conversion, and the ability to quickly deliver new features.
+>
+> An internal team focused on building APIs and dashboards may instead focus on
+> reliability, uptime, and performance.
+>
+> Which "benefits" a team optimizes for should reflect their unique goals.
+
+**Some example benefit themes:**
+
+- **Growth**: User retention, conversion, analytics, NPS
+- **Efficiency**: Productivity, velocity, shipping faster, reducing blockers
+- **Profitability**: Revenue, cost savings, onboarding new users
+- **Reliability**: Scalability, uptime, APM metrics
+- **Quality**: Bugs caught, bugs reported, bugs per story / point
+- **Performance**: Speed, bundle size, lighthouse score, CI/CD times
+
+If the team is responsible for multiple domains - like mobile, web, APIs,
+integrations, emails, etc - those may make for great categories in addition to
+or instead of the cross-cutting ones above.
 
 ### Costs
 
@@ -143,14 +174,20 @@ imperfect art.
 
 **A three point scale is often enough for scoring uncertainty**:
 
-1. The team is **_very confident_** there will be no surprises
+1. The team is **_confident_** there will be no surprises
 2. The team is **_hopeful_** there will be few surprises
 3. The team is **_concerned_** there will be several surprises
+
+This can easily be adjusted to work with a 2-, 4-, or 5-point scale, too!
 
 #### Risk
 
 Technical projects will _almost always_ be pushed to the back burner if a
 project more critical to the organization's bottom line becomes a top priority.
+Planning for this can save your team a lot of heartache. If the team keeps
+starting projects that are high-risk and never seeing them materialize, it can
+be very easy for folks to become jaded or disillusioned with the prospect of
+technical projects.
 
 Knowing how much risk the team is absorbing can help engineers think of creative
 ways to break it apart and find more iterative, less risky approaches... or
@@ -168,52 +205,7 @@ Another way to frame this for the team might be:
 If the answer is "no" or "not really", as is often the case with dependency
 updates, then the item is high risk.
 
-### Benefits
-
-These should be driven largely by the product team and stakeholders and align
-with the goals and objectives (or OKRs) of the organization.
-
-The key metrics and indicators for a B2B organization will likely differ from
-B2C and different markets and products will have different tradeoffs.
-
-> [!NOTE] Every team should have its own unique benefits
->
-> A user-facing mobile app team may care more about top-line metrics like
-> revenue, conversion, and the ability to quickly deliver new features.
->
-> An internal team focused on building APIs and dashboards may instead focus on
-> reliability, uptime, and performance.
->
-> Which "benefits" a team optimizes for should reflect their unique goals.
-
-**Some example benefit themes:**
-
-- **Growth**: User retention, conversion, analytics, NPS
-- **Efficiency**: Productivity, velocity, shipping faster, reducing blockers
-- **Profitability**: Revenue, cost savings, onboarding new users
-- **Reliability**: Scalability, uptime, APM metrics
-- **Quality**: Bugs caught, bugs reported, bugs per story / point
-- **Performance**: Speed, bundle size, lighthouse score, CI/CD times
-
-If the team is responsible for multiple domains - like mobile, web, APIs,
-integrations, emails, etc - those may make for great categories in addition to
-or instead of the cross-cutting ones above.
-
-### Weights
-
-Weights are factors that allow you to reprioritize the backlog without
-re-entering scores or data manually. Some rules to remember:
-
-- Each weight should be between 0 and 100
-- The sum of all weights for costs should equal 100
-- The sum of all weights for benefits should equal 100
-
-> [!TIP] Formula for weighting scores When applying weights, multiply them as
-> percentages:
->
-> `weighted score = score * (weight / 100)`
-
-### Scoring
+### Scoring and scaling
 
 When scoring, its important that the final weighted score for both benefits and
 costs is between 1 and 100.
@@ -228,8 +220,9 @@ or customers impacted.
 
 Whatever you use, find a way to give it a numeric value between 1 and 100.
 
-> [!TIP] Formula for scaling scores to 100 To achieve equally distributed final
-> scores that range from 0-100, use:
+> [!TIP] Formula for scaling scores to 100
+>
+> To achieve equally distributed final scores that range from 0-100, use:
 >
 > `scaled score = (score - 1) / (max score - 1) * 100`
 
@@ -248,8 +241,8 @@ calculations for commonly used scales:
   - Star ratings
   - T-shirt sizes ( xs, sm, md, lg, xl )
 
-Not sure where to start? Here are some sane "defaults" you can use when scoring
-costs with your team:
+Not sure where to start? Here are some sane "defaults" you can use with your
+team:
 
 - **Effort**
   - 1 = hours
@@ -266,6 +259,55 @@ costs with your team:
 - **Risk**
   - 1 = completely iterative / reusable / salvageable
   - 3 = all or nothing
+
+### Weights
+
+Weights are factors that allow you to reprioritize the backlog without
+re-entering scores or data manually.
+
+**Some rules to remember:**
+
+- Each weight should be between 0 and 100
+- The sum of all weights for costs should equal 100
+- The sum of all weights for benefits should equal 100
+
+> [!TIP] Formula for weighting scores
+>
+> When applying weights, multiply them as percentages:
+>
+> `weighted score = score * (weight / 100)`
+
+### Final Score
+
+The final score of each can be calculated by subtracting weighted costs from
+weighted benefits.
+
+![cost benefit example](./assets/cost-benefit-final.svg)
+
+This score can roughly equate to the item's return on investment (ROI).
+
+Items with a higher ROI should be very easy to advocate for with stakeholders
+and leadership teams and items with a low ROI should be avoided as potential
+traps.
+
+This score can be used to sort the backlog so that the highest scoring items are
+at the top.
+
+**The backlog can now be broken into four categories:**
+
+1. **Easy wins**: ( High Benefit / Low Cost ) Do these first, they are "low
+   hanging fruit"
+2. **Investments**: ( High Benefit / High Cost ) Discuss if these are worth the
+   resources and make a plan
+3. **Chores**: ( Low Benefit / Low Cost ) Tackle these when other work is
+   finished if a someone is passionate about it
+4. **Time sinks**: ( Low Benefit / High Cost ) These items should be avoided
+   unless you want an economy seat on the pain train
+
+![cost benefit matrix](../assets/cost-benefit-matrix.svg)
+
+The final score itself may not be as precise as the four categories above, but
+will quickly identify your quick wins and the tickets your team should avoid.
 
 ## Comparison to other tools
 
@@ -398,8 +440,9 @@ proactively so there are no surprises here.
    consensus
 6. Continue with the next item until all items are scored
 
-> [!TIP] Keep things on track It can be easy for the team to get into the weeds
-> on these items.
+> [!TIP] Keep things on track
+>
+> It can be easy for the team to get into the weeds on these items.
 >
 > Make it clear before the meeting starts that you intend to use a timer to keep
 > everyone focused and that you can revisit items later that need more
@@ -410,6 +453,19 @@ proactively so there are no surprises here.
 > Asking folks to review items _before_ the meeting can also help you power
 > through a long backlog, quickly.
 
+#### Review backlog
+
+Now that all items are scored and sorted, spend time with the team discussing the following:
+
+1. Do any of the final scores surprise us?
+2. Are there any "easy wins" we should focus on?
+
+These two questions can get the team thinking about tradeoffs and moving in the right direction!
+
+If you don't have much time left to discuss, this step can be covered in a retro, standup, or follow-up meeting.
+
 ### Resources
 
 - [Backlog Template - Google Sheets](https://docs.google.com/spreadsheets/d/1Ttr0hH_P4UGtsj0e338hewYAURizzX1HOp1oS2KfCHk/edit?usp=drive_web&ouid=106394523405700250728)
+- Todo: Notion template
+- Todo: Confluence template?

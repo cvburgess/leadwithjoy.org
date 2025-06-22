@@ -66,6 +66,7 @@ site.hooks.addMarkdownItPlugin(mdItObsidianCallouts);
 site.add([".css"]);
 site.add("scripts"); // Add JavaScript files
 site.add([".jpg", ".jpeg", ".gif", ".png", ".webp", ".svg", ".ico"]);
+site.add("posts/_assets");
 
 // --------- FILTERS ---------- //
 
