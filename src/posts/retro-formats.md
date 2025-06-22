@@ -50,49 +50,52 @@ This is one of my favorite times to retro with teams. The point of retro is to
 give teams a forum to collectively shape how they want to work, and retro acts
 as a natural check-in point where we can keep moving forward or adjust course.
 
-The [Start Stop Continue](start-stop-continue-retro.md) format is my favorite
-for new teams!
+The **Start Stop Continue** format is my favorite for new teams!
+
+[preview](https://www.freecodecamp.org/news/how-to-run-a-sprint-retrospective-start-stop-continue-method)
 
 It's a very simple format to run, and the action items are as clear as day. By
 using verbs as categories rather than adjectives, this format guarantees the
 team will think of (and leave with) actionable things they can do to make the
 next milestone even better.
 
-The [4Ls](4ls-retro.md) format is another popular choice, though, in my
-experience, _Lacked_ and _Longed For_ tend to be a bit blurry for most teams.
+The **4Ls** format may also fit here, but it may be _a better fit_...
 
 ## When the team is trying new things and iterating
 
 Adopted a new process? Started using a new tool? Retro is the place to talk
 about it!
 
-If you are adjusting to change, the
-[What Went Well / Didn't Go Well](what-went-well-didnt-go-well-retro.md) format
+If you are adjusting to change, the **What Went Well / Didn't Go Well** format
 is a great way to identify where the pain points are and where the wins are.
 Rather than focusing on the change itself, encourage the team to get specific
 about which features or workflows are impacting them for better or for worse.
 
-The [4Ls](4ls-retro.md) format is also viable here if you want to emphasize the
-things you learned or areas in which the tool or process may need to continue to
-evolve.
+[preview](https://www.retrium.com/retrospective-techniques/whatwentwell-whatdidntgowell)
 
-If you bit off a lot all at once, consider
-[Start Stop Continue](start-stop-continue-retro.md) which is incredibly
-actionable and can isolate exactly which levers the team wants to adjust.
+The 4Ls format is also viable here if you want to emphasize the things you
+learned or areas in which the tool or process may need to continue to evolve.
 
-## When the team is frustrated by things outside their of control
+Be sure to use _Loathed_ instead of _Lacked_ as the latter is often confused
+with _Longed For_.
+
+If you bit off a lot all at once, consider **Start Stop Continue** which is
+incredibly actionable and can isolate exactly which levers the team wants to
+adjust.
+
+## When the team is frustrated by things outside their control
 
 Sometimes you can't change what you can't change.
 
-After getting those off your chest with a [Mad Sad Glad](mad-sad-glad-retro.md)
-retro, it can be healthy to shift the energy away from feeling helpless to the
-powers that be and instead focus on the little things that brought you joy
-despite them.
+After getting those off your chest with a **Mad Sad Glad** retro, it can be
+healthy to shift the energy away from feeling helpless to the powers that be and
+instead focus on the little things that brought you joy despite them.
 
-The [Mario Kart](mario-kart-retro.md) format really shines here, and I find that
-it encourages teams to celebrate their wins and shout out their teammates. It's
-also just fun, and who doesn't need a little fun when the world feels like it's
-on fire?
+The **Mario Kart** format really shines here, and I find that it encourages
+teams to celebrate their wins and shout out their teammates. It's also just fun,
+and who doesn't need a little fun when the world feels like it's on fire?
+
+[preview](mario-kart-retro.md)
 
 **BONUS POINTS**: Follow the retro with a Mario Kart tournament if you have a
 few Nintendo fans on the team!
@@ -108,10 +111,10 @@ If your team is comfortable sharing which things are theirs, you can take
 virtually any format and, for each category, ask if people would like to share
 theirs - being mindful to call on the people that have not shared in a while.
 
-Otherwise, the [Mario Kart](mario-kart-retro.md) format is a fun format to run,
-and there are no categories! Each team member goes in order, sharing the wins
-and losses from their point of view, ensuring everyone is heard - even if only
-for a moment.
+Otherwise, the **[Mario Kart](mario-kart-retro.md)** format is a fun format to
+run, and there are no categories! Each team member goes in order, sharing the
+wins and losses from their point of view, ensuring everyone is heard - even if
+only for a moment.
 
 When using this format, I often don't set a timer so people do not feel rushed
 and save the more vocal contributors for last to ensure that they don't take up
@@ -121,8 +124,10 @@ a disproportionate amount of time.
 
 Sometimes things don't go your way for any number of reasons.
 
-The [Mad Sad Glad](mad-sad-glad-retro.md) format is a healthy way to let teams
-vocalize their emotions without necessarily generating too many action items.
+The **Mad Sad Glad** format is a healthy way to let teams vocalize their
+emotions without necessarily generating too many action items.
+
+[preview](https://www.teamretro.com/retrospectives/mad-sad-glad-retrospective)
 
 Yes, I get it. Retro is supposed to be about how you will move forward and get
 better, but sometimes you just need to let off a little steam with people who
@@ -152,8 +157,10 @@ stays fairly blameless is also critical for the team's health and morale.
 
 ## When the team tackled something new and rose to the occasion
 
-The [4Ls](4ls-retro.md) format shines here because it has a not-so-secret
-superpower: _Learned_.
+The **4Ls** format shines here because it has a not-so-secret superpower:
+_Learned_.
+
+[preview](https://www.atlassian.com/team-playbook/plays/4-ls-retrospective-technique)
 
 When using this format, I love to remind teams that _Learned_ is not only for
 lessons learned but all the neat things that they discovered or figured out
@@ -161,9 +168,8 @@ along the way, too!
 
 ## When all else fails
 
-The classic
-[What Went Well / Didn't Go Well](what-went-well-didnt-go-well-retro.md) format
-is the easiest retro format to run and works in virtually every scenario.
+The classic **What Went Well / Didn't Go Well** format is the easiest retro
+format to run and works in virtually every scenario.
 
 ## When the team has retro down to a science
 

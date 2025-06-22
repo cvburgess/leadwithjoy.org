@@ -13,18 +13,17 @@ interface OGData {
 }
 
 const fetchLocalData = (url: string): Promise<OGData> => {
-  const uniformUrl = url.endsWith("/") ? url : `${url}/`;
 
-  const page = site.pages.find((page) => page.data.url === uniformUrl);
+  const page = site.pages.find((page) => `${page.src.path}/` === url);
 
-  if (!page) throw new Error(`Preview Error (page not found): ${uniformUrl}`);
+  if (!page) throw new Error(`Preview Error (page not found): ${url}`);
 
   return Promise.resolve({
     title: page!.data.title!,
     description: page!.data.description,
     image: makeOgImage(page!.data.type),
     hostname: "cvburgess.com",
-    url: makeAbsoluteUrl(uniformUrl),
+    url: makeAbsoluteUrl(url),
   });
 };
 

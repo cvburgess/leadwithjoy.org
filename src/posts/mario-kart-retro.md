@@ -9,7 +9,7 @@ title: Mario Kart Retro
 description: Host a retro that encourages teams to celebrate wins, shout out teammates, and share the spotlight. It's also just plain fun, and we could all use a little more fun, right?
 date: 2025-06-04
 episodeId:
-draft: true
+draft: false
 authors:
   - cvburgess
 videoId:
@@ -72,7 +72,7 @@ everyone to come prepared with their items. Being that we are all human and time
 is fickle, I also leave five minutes at the beginning of the call for people to
 "wrap them up".
 
-### Rules
+**Rules and Limitations**
 
 - Each participant must pick **_exactly 3 items_** to share
 - **Max** 2 bananas 🍌 🍌

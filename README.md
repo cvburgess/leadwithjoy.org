@@ -20,7 +20,7 @@
 - **_includes**: Layout files and partials
 - **img**: Image files for anything not-post-related
 - **posts**: All posts (.md) and their attachments / related files
-  - **_assets**: Files attached to posts like images, audio, or PDFs
+  - **assets**: Files attached to posts like images, audio, or PDFs
   - **_templates**: Markdown files for making new posts with
     [Obsidian](https://obsidian.md/) or any editor
 - **scripts**: Script files to be imported with script tags in HTML
